@@ -9,7 +9,7 @@
 
 <body>
 <!-- header (titre principal) -->
-    <header>
+    <header class="header">
         <a href=""> <li>Favoris</li>  </a>
         <a href=""><li> Se connecter </li></a>
         <a href=""><li> Menu </li></a>
