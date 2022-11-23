@@ -25,9 +25,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Créer un paramètre du nom de "param-username"
             $param_username = trim($_POST["username"]);
             
-            // Attempt to execute the prepared statement
+            // essaie d'exécution (true ou false) selon le résultat
             if(mysqli_stmt_execute($stmt)){
-                /* store result */
+                // on le stock 
                 mysqli_stmt_store_result($stmt);
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
@@ -39,12 +39,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
-            // Close statement
+            // ferme protocole
             mysqli_stmt_close($stmt);
         }
     }
     
-    // Validate password
+    // password validé
     if(empty(trim($_POST["password"]))){
         $password_err = "Please enter a password.";     
     } elseif(strlen(trim($_POST["password"])) < 6){
@@ -53,7 +53,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $password = trim($_POST["password"]);
     }
     
-    // Validate confirm password
+    // password validé confirmé
     if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Please confirm password.";     
     } else{
@@ -63,34 +63,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
     
-    // Check input errors before inserting in database
+    // Regarde si y'a pas des erreurs avant l'injection dans la base de données relié à mysql
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
-        // Prepare an insert statement
+        // préparation d'une insertion dans la ba mysql des données 'password'
         $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
+            // liaison des variables "$stmt" et "$param_username" à une requête MySQL
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
             
-            // Set parameters
+            // créer un paramètre
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             
-            // Attempt to execute the prepared statement
+            // essaie d'exécuter le protocole pour le transfert des données
             if(mysqli_stmt_execute($stmt)){
-                // Redirect to login page
+                // redirige vers la page de login
                 header("location: login.php");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
-            // Close statement
+            // ferme le protocole
             mysqli_stmt_close($stmt);
         }
     }
     
-    // Close connection
+    // ferme la connexion
     mysqli_close($link);
 }
 ?>

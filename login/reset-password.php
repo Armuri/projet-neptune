@@ -18,7 +18,7 @@ $new_password_err = $confirm_password_err = "";
 // Processus de mise en forme pour l'envoie la base de donnée
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
-    // Validate new password
+    // validé un nouveau mot de passe 
     if(empty(trim($_POST["new_password"]))){
         $new_password_err = "Please enter the new password.";     
     } elseif(strlen(trim($_POST["new_password"])) < 6){
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password = trim($_POST["new_password"]);
     }
     
-    // Validate confirm password
+    // validé le mot de passe
     if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Please confirm the password.";
     } else{
@@ -50,9 +50,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_password = password_hash($new_password, PASSWORD_DEFAULT);
             $param_id = $_SESSION["id"];
             
-            // Attempt to execute the prepared statement
+            // Exécution du protocole
             if(mysqli_stmt_execute($stmt)){
-                // Password updated successfully. Destroy the session, and redirect to login page
+                // le mot de passe a été mis à jour. La session va être détruite et l'utilisateur est redirifé vers la page de login
                 session_destroy();
                 header("location: login.php");
                 exit();
@@ -60,12 +60,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
-            // Close statement
+            // ferme le protocole
             mysqli_stmt_close($stmt);
         }
     }
     
-    // Close connection
+    // Cferme la connexion
     mysqli_close($link);
 }
 ?>
