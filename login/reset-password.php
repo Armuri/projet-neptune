@@ -1,21 +1,21 @@
 <?php
-// Initialize the session
+// initialisation de la session    
 session_start();
  
-// Check if the user is logged in, otherwise redirect to login page
+// on vérifie si l'user est déjà logué, si c'est le pas le cas on le redirige vers la page login
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
  
-// Include config file
+// on inclus le fichier "config.php" dans ce fichier
 require_once "config.php";
  
-// Define variables and initialize with empty values
+// Création de variables et initialisation de celles-ci avec des valeurs vides
 $new_password = $confirm_password = "";
 $new_password_err = $confirm_password_err = "";
  
-// Processing form data when form is submitted
+// Processus de mise en forme pour l'envoie la base de donnée
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Validate new password
@@ -83,22 +83,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper">
-        <h2>Reset Password</h2>
-        <p>Please fill out this form to reset your password.</p>
+        <h2>Réinitialiser votre mot de passe</h2>
+        <p>Veuillez remplir le formulaire pour réinitialiser votre mot de passe.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
             <div class="form-group">
-                <label>New Password</label>
+                <label>Nouveau mot de passe :</label>
                 <input type="password" name="new_password" class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $new_password; ?>">
                 <span class="invalid-feedback"><?php echo $new_password_err; ?></span>
             </div>
             <div class="form-group">
-                <label>Confirm Password</label>
+                <label>Confirmer votre mot de passe :</label>
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link ml-2" href="welcome.php">Cancel</a>
+                <a class="btn btn-link ml-2" href="welcome.php">Annuler</a>
             </div>
         </form>
     </div>    

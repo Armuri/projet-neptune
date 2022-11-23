@@ -1,14 +1,14 @@
 <?php
-// Initialize the session
+// Initialisation de la session 
 session_start();
  
-// Unset all of the session variables
+// Tableau contenant le nombre de sessions 
 $_SESSION = array();
  
-// Destroy the session.
+// Détruit la session
 session_destroy();
  
-// Redirect to login page
+// Redirection vers la page de login 
 header("location: login.php");
 exit;
 ?>
