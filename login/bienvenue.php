@@ -19,7 +19,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <h1 class="msg_bvn">Bonjour, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Bienvenue sur votre espace Hotel Neptune.</h1>
     <p>
         <a href="reset-password.php" class="submit">Réinitialiser mon mot de passe</a>
-        <a href="logout.php" class="reset">Se déconnecter du compte</a>
+        <a href="deconnexion.php" class="reset">Se déconnecter du compte</a>
     </p>
     <link rel="stylesheet" href="index.css">
 </body>

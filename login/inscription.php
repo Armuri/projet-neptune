@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper">
-        <h2>Inscrivez-vous</h2>
+        <h2>Inscription</h2>
         <p>Remplissez le formulaire pour créer votre compte</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
@@ -125,7 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="submit" value="Submit">
                 <input type="reset" class="reset" value="Reset">
             </div>
-            <p>Vous avez déjà un compte  <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
+            <p>Vous avez déjà un compte? <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
         </form>
     </div>    
     <link rel="stylesheet" href="index.css">

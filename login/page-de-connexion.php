@@ -20,14 +20,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // on regarde si l'username est videe ou non quand l'utilisateur va appuyer sur submit
     if(empty(trim($_POST["username"]))){
-        $username_err = "Please enter username.";
+        $username_err = "Veuillez entrer un nom d'utilisateur.";
     } else{
         $username = trim($_POST["username"]);
     }
     
     // on regarde si le password est vide ou non quand l'utilisateur va appuyer sur submit
     if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter your password.";
+        $password_err = "Veuillez entrer un mot de passe.";
     } else{
         $password = trim($_POST["password"]);
     }
@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // redirection de l'user vers la page de bienvenue
-                            header("location: welcome.php");
+                            header("location: bienvenue.php");
                         } else{
                             // sinon (invalide password, on lui affiche un message d'erreur)
                             $login_err = "Invalid username or password.";
@@ -93,11 +93,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Page de connexion</title>
-    <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
-    </style>
-</head>
 <body>
     <div class="wrapper">
         <h2>Page de connexion</h2>
@@ -121,7 +116,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="submit" value="Login">
+                <input type="submit" class="submit" value="Se connecter">
             </div>
             <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous maintenant!</a>.</p>
         </form>
