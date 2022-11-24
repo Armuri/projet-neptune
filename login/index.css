@@ -1,5 +1,6 @@
 html{
-
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -28,6 +29,23 @@ span{
 
 }
 
+.form-control {
+
+
+}
+
+
+.submit {
+
+
+}
+
+
+.submit2 {
+
+
+
+}
 a:hover,
 a:focus {
     

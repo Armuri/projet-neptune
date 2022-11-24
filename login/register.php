@@ -100,7 +100,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Inscrivez-vous</title>
-    <link rel="stylesheet" href="index.css"><!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
@@ -127,11 +126,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
+                <input type="submit" class="submit" value="Submit">
+                <input type="reset" class="submit2" value="Reset">
             </div>
-            <p>Vous avez déjà un compte  <a href="login.php">Connectez-vous ici</a>.</p>
+            <p>Vous avez déjà un compte  <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
         </form>
     </div>    
+    <link rel="stylesheet" href="index.css"><!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
 </body>
 </html>
