@@ -92,8 +92,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css"><!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <title>Page de connexion</title>
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
@@ -127,6 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Vous n'avez pas de compte? <a href="register.php">Inscrivez-vous maintenant!</a>.</p>
         </form>
     </div>
+    <link rel="stylesheet" href="index.css">
 </body>
 </html>
 
