@@ -127,11 +127,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="submit" value="Submit">
-                <input type="reset" class="submit2" value="Reset">
+                <input type="reset" class="reset" value="Reset">
             </div>
             <p>Vous avez déjà un compte  <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
         </form>
     </div>    
-    <link rel="stylesheet" href="index.css"><!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <link rel="stylesheet" href="index.css">
 </body>
 </html>
+
+
+
+
+<!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
