@@ -1,6 +1,6 @@
 <?php
 // Introduire le fichier config.php au fichier register.php
-require_once "config.php";
+require_once "link-mysql.php";
  
 // Création de variables et initialisation de celles-ci avec des valeurs vides
 $username = $password = $confirm_password = "";
@@ -80,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // essaie d'exécuter le protocole pour le transfert des données
             if(mysqli_stmt_execute($stmt)){
                 // redirige vers la page de login
-                header("location: login.php");
+                header("location: page-de-connexion.php");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
@@ -99,11 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inscrivez-vous</title>
-    <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
-    </style>
+    <title>Formulaire d'inscription</title>
 </head>
 <body>
     <div class="wrapper">

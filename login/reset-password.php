@@ -4,12 +4,12 @@ session_start();
  
 // on vérifie si l'user est déjà logué, si c'est le pas le cas on le redirige vers la page login
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
+    header("location: page-de-connexion.php");
     exit;
 }
  
 // on inclus le fichier "config.php" dans ce fichier
-require_once "config.php";
+require_once "link-mysql.php";
  
 // Création de variables et initialisation de celles-ci avec des valeurs vides
 $new_password = $confirm_password = "";
@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(mysqli_stmt_execute($stmt)){
                 // le mot de passe a été mis à jour. La session va être détruite et l'utilisateur est redirifé vers la page de login
                 session_destroy();
-                header("location: login.php");
+                header("location: page-de-connexion.php");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -96,8 +96,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link ml-2" href="bienvenue.php">Annuler</a>
+                <input type="submit" class="submit value="Submit">
+                <a class="reset" href="bienvenue.php">Annuler</a>
             </div>
         </form>
     </div>    

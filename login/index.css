@@ -1,6 +1,6 @@
 html{
-    background-color: bisque;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(149, 255, 0);
+    font-family:'Courier New', Courier, monospace
 
 }
 
@@ -16,7 +16,8 @@ body {
 
 }
 
-label{
+label{ 
+    
 
 
 }
@@ -51,7 +52,7 @@ label{
 }
 
 .wrapper {
-
+    width: 360px; padding: 20px;
     
 }
 

@@ -4,12 +4,12 @@ session_start();
  
 // Si l'user est déjà connecté on l'envoie sur le page de bienvenue
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: bienvenue.php");
     exit;
 }
  
 // inclus dans ce fichier le fichier config (on va utiliser les paramètres présent dans celui-ci)
-require_once "config.php";
+require_once "link-mysql.php";
  
 // définition de username (vide) et password (vide) et username error...
 $username = $password = "";
@@ -123,7 +123,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="submit" value="Login">
             </div>
-            <p>Vous n'avez pas de compte? <a href="register.php">Inscrivez-vous maintenant!</a>.</p>
+            <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous maintenant!</a>.</p>
         </form>
     </div>
     <link rel="stylesheet" href="index.css">
