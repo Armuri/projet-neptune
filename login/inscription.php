@@ -11,9 +11,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Validation de username 
     if(empty(trim($_POST["username"]))){  // si la case "username" est vide et qu'elle est quand même envoyé alors afficher :
-        $username_err = "Please enter a username.";
+        $username_err = "Veuillez entrer un nom d'utilisateur.";
     } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["username"]))){ // si la cas "username" contient des caractères étrangers aux lettres,nombres et underscores alors afficher :
-        $username_err = "Username can only contain letters, numbers, and underscores.";
+        $username_err = "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des underscores.";
     } else{
         // On prépare la selection de "id" qui provient de la table USER pour ensuite introduire la valeur rentrée par l'utilisateur dans la colonne "username"
         $sql = "SELECT id FROM users WHERE username = ?";
@@ -31,12 +31,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
-                    $username_err = "This username is already taken.";
+                    $username_err = "Ce nom d'utilisateur est déjà pris.";
                 } else{
                     $username = trim($_POST["username"]);
                 }
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Oups! Quelque chose s'est mal passé. Veuillez réesayer plus tard.";
             }
 
             // ferme protocole
@@ -46,20 +46,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     // password validé
     if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter a password.";     
+        $password_err = "Veuillez entrer un mot de passe.";     
     } elseif(strlen(trim($_POST["password"])) < 6){
-        $password_err = "Password must have atleast 6 characters.";
+        $password_err = "Le mot de passe doit contenir au moins 6 caractères.";
     } else{
         $password = trim($_POST["password"]);
     }
     
     // password validé confirmé
     if(empty(trim($_POST["confirm_password"]))){
-        $confirm_password_err = "Please confirm password.";     
+        $confirm_password_err = "Veuillez confirmer votre mot de passe.";     
     } else{
         $confirm_password = trim($_POST["confirm_password"]);
         if(empty($password_err) && ($password != $confirm_password)){
-            $confirm_password_err = "Password did not match.";
+            $confirm_password_err = "Les mots de passes ne concordent pas.";
         }
     }
     
@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // redirige vers la page de login
                 header("location: page-de-connexion.php");
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Oups! Quelque chose s'est mal passé. Veuillez réesayer plus tard.";
             }
 
             // ferme le protocole
@@ -102,6 +102,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Formulaire d'inscription</title>
 </head>
 <body>
+    <div class="neptune"><h1>Hotel Neptune</h1></div>
+    <div class="carnon"><h2>Carnon</h2></div>
     <div class="wrapper">
         <h2>Inscription</h2>
         <p>Remplissez le formulaire pour créer votre compte</p>
@@ -121,18 +123,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
-            <div class="form-group">
-                <input type="submit" class="submit" value="Submit">
-                <input type="reset" class="reset" value="Reset">
+            <div class="form-group1">
+                <input type="submit" class="submit" value="Envoyer">
+                <input type="reset" class="reset" value="Vider les valeurs">
             </div>
             <p>Vous avez déjà un compte? <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
         </form>
     </div>    
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="inscription-reset-password.css">
 </body>
 </html>
-
-
-
-
-<!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->

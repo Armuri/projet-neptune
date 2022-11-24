@@ -20,20 +20,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // validé un nouveau mot de passe 
     if(empty(trim($_POST["new_password"]))){
-        $new_password_err = "Please enter the new password.";     
+        $new_password_err = "Veuillez entrer un mot de passe.";     
     } elseif(strlen(trim($_POST["new_password"])) < 6){
-        $new_password_err = "Password must have atleast 6 characters.";
+        $new_password_err = "Le mot de passe doit contenir au moins 6 caractères.";
     } else{
         $new_password = trim($_POST["new_password"]);
     }
     
     // validé le mot de passe
     if(empty(trim($_POST["confirm_password"]))){
-        $confirm_password_err = "Please confirm the password.";
+        $confirm_password_err = "Veuillez confirmer votre mot de passe.";
     } else{
         $confirm_password = trim($_POST["confirm_password"]);
         if(empty($new_password_err) && ($new_password != $confirm_password)){
-            $confirm_password_err = "Password did not match.";
+            $confirm_password_err = "Les mots de passes ne concordent pas.";
         }
     }
         
@@ -57,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 header("location: page-de-connexion.php");
                 exit();
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Oups! Quelque chose s'est mal passé. Veuillez réesayer plus tard.";
             }
 
             // ferme le protocole
@@ -75,12 +75,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Reset Password</title>
-    <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
-    </style>
 </head>
 <body>
+    <div class="neptune"><h1>Hotel Neptune</h1></div>
+    <div class="carnon"><h2>Carnon</h2></div>
     <div class="wrapper">
         <h2>Réinitialiser votre mot de passe</h2>
         <p>Veuillez remplir le formulaire pour réinitialiser votre mot de passe.</p>
@@ -101,6 +99,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
         </form>
     </div>    
-    <link rel="stylesheet" href="index.css"><!-- href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <link rel="stylesheet" href="inscription-reset-password.css">
 </body>
 </html>

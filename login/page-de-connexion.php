@@ -67,15 +67,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             header("location: bienvenue.php");
                         } else{
                             // sinon (invalide password, on lui affiche un message d'erreur)
-                            $login_err = "Invalid username or password.";
+                            $login_err = "Nom d'utilisateur ou mot de passe incorrect.";
                         }
                     }
                 } else{
                     // si username incorrect alors on affiche un message d'erreur
-                    $login_err = "Invalid username or password.";
+                    $login_err = "Nom d'utilisateur ou mot de passe incorrect.";
                 }
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Oups! Quelque chose s'est mal passé. Veuillez réesayer plus tard.";
             }
 
             // ferme le protocole
@@ -94,6 +94,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Page de connexion</title>
 <body>
+    <div class="neptune"><h1>Hotel Neptune</h1></div>
+    <div class="carnon"><h2>Carnon</h2></div>
     <div class="wrapper">
         <h2>Page de connexion</h2>
         <p>Entrez vos identifiants afin d'accéder à la réservation des chambres.</p>
@@ -115,9 +117,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
+            <div class="form-group">
                 <input type="submit" class="submit" value="Se connecter">
             <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous maintenant</a>.</p>
+            </div>
         </form>
+        
     </div>
     <link rel="stylesheet" href="index.css">
 </body>
