@@ -102,8 +102,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Formulaire d'inscription</title>
 </head>
 <body>
-    <div class="neptune"><h1>Hotel Neptune</h1></div>
-    <div class="carnon"><h2>Carnon</h2></div>
+    <h1 class="neptune">Hotel Neptune</h1>
+    <h1 class="carnon">Carnon</h1>
     <div class="wrapper">
         <h2>Inscription</h2>
         <p>Remplissez le formulaire pour créer votre compte</p>
@@ -130,6 +130,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Vous avez déjà un compte? <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
         </form>
     </div>    
-    <link rel="stylesheet" href="inscription-reset-password.css">
+    <link rel="stylesheet" href="index.css">
 </body>
 </html>

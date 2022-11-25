@@ -97,14 +97,31 @@ a {
 
 /**** animation ****/
 
+@keyframes carnon {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left:80%  ;
+
+    }
+}
+
+
 .neptune {
+    border: 1px transparent;
     display: flex;
     position: absolute;
+    top:0;
 }
 
 .carnon {
-    display: flex;
     position: absolute;
+    top: 0;
+    left: 80%;
+
+    
 }
 
 /**** ****/

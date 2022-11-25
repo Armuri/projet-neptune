@@ -99,6 +99,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
         </form>
     </div>    
-    <link rel="stylesheet" href="inscription-reset-password.css">
+    <link rel="stylesheet" href="index.css">
 </body>
 </html>

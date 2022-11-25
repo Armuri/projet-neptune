@@ -57,7 +57,9 @@ label{
 }
 
 .submit:focus,
-.submit:hover {
+.submit:hover,
+.reset:focus,
+.reset:hover {
 
     text-decoration: none;
     color: rgb(0, 132, 255);
@@ -97,15 +99,26 @@ a {
 
 @keyframes carnon {
     from {
-        left: 0%;
+        left: 100%;
     }
 
     to {
         left:80%  ;
 
     }
+
 }
 
+@keyframes neptune {
+    from { 
+        left : 0%
+    } 
+
+    to {
+        left : 
+    }
+
+}
 
 .neptune {
     border: 1px transparent;
@@ -117,7 +130,7 @@ a {
 .carnon {
     position: absolute;
     top: 0;
-    left: 80%;
+    left: 0;
 
     
 }
