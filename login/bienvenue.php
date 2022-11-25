@@ -21,6 +21,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <a href="reset-password.php" class="submit">Réinitialiser mon mot de passe</a>
         <a href="deconnexion.php" class="reset">Se déconnecter du compte</a>
     </p>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bienvenue.css">
 </body>
 </html>

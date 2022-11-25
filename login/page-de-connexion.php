@@ -94,36 +94,49 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Page de connexion</title>
 <body>
-    <h1 class="neptune">Hotel Neptune</h1>
-    <h1 class="carnon">Carnon</h2>
-    <div class="wrapper">
-        <h2>Page de connexion</h2>
-        <p>Entrez vos identifiants afin d'accéder à la réservation des chambres.</p>
-
-        <?php 
-        if(!empty($login_err)){
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
-        }        
-        ?>
-
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label>Nom d'utilisateur :</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group">
-                <label>Mot de passe :</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="submit" value="Se connecter">
-            <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous maintenant</a>.</p>
-            </div>
-        </form>
-        
+    <div class="boxmain">
+            <h1 class="neptune">Hotel Neptune</h1>
+        <div class="texte">
+            <p>L'Hotel Neptune est un hôtel Situé en face d'un port <br> de plaisance. </p> 
+            <img src="images/port marianne.jpg" alt="port marianne hotel neptune" style="max-width: 250px">
+            <p> Cet hôtel de style décontracté se trouve à 11 minutes <br> à pied de la plage et à 15,6 km du centre-ville de Montpellier.</p>
+            <img src="images/map montpellier.jpg" alt="map montpellier" style="max-width: 250px">
+        </div>
+    </div>  
+    <div class="boxmain2">
+            <h1 class="carnon">à Carnon</h1>
+        <div class="texte2">
+            <p>239 rue de l'étang de l'or Carnon-Port, 34130 Mauguio</p> 
+            <img src="images/map carnon.jpg" alt="map carnon hotel neptune" style="max-width: 300px">
+        </div>
     </div>
+        <div class="wrapper">
+            <h2>Page de connexion</h2>
+            <p>Entrez vos identifiants afin d'accéder à la réservation des chambres.</p>
+
+            <?php 
+            if(!empty($login_err)){
+                echo '<div class="alert alert-danger">' . $login_err . '</div>';
+            }        
+            ?>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <div class="form-group">
+                    <label>Nom d'utilisateur :</label>
+                    <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                    <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                </div>    
+                <div class="form-group">
+                    <label>Mot de passe :</label>
+                    <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                    <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="submit" value="Se connecter">
+                <p>Vous n'avez pas de compte? <a href="inscription.php">Inscrivez-vous maintenant</a>.</p>
+                </div>
+            </form>
+
+        </div>
     <link rel="stylesheet" href="index.css">
 </body>
 </html>
