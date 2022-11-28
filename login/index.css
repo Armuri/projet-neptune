@@ -23,7 +23,7 @@ label{
 .form-group {
     display: grid;
     grid-template-columns: 1fr;
-    border-radius: 1em;
+    border-radius: 2em;
     gap : 5px;
     align-items: center;
     
@@ -138,63 +138,22 @@ a{
 
 .neptune {
     position: absolute;
+    border-radius: 2em;
     top:5%;
     left:5%;
     animation: normal 1s slide_left;
     background-color: rgba(99, 211, 255, 0.66);
-    border-radius: 2em;
     padding: 1%;
 
 }
 
 .carnon {
     position: absolute;
+    border-radius: 2em;
     top:5%;
     left:78%;
     animation: normal 1s slide_right;
     background-color: rgba(99, 211, 255, 0.66);
-    border-radius: 2em;
     padding: 1%;
 
-}
-
-.boxmain{
-    display: flex;
-    font-size: 14px;
-}
-
-.texte {
-    background-color: rgba(99, 211, 255, 0.66);
-    color: black;
-    padding: 1%;
-    position: absolute;
-    top: 18%;
-    left: 1.3%;
-    opacity: 0;
-    transition: all ease-out.5s;
-    width: auto;
-    border-radius: 1rem;
-}
-
-.boxmain:hover .texte,
-.boxmain2:hover .texte2 {
-    opacity:1;
-}
-
-
-.boxmain2 {
-    font-size: 14px;
-} 
-
-.texte2 {
-    background-color: rgba(99, 211, 255, 0.66);
-    color: black;
-    padding: 1%;
-    position: absolute;
-    top: 18%;
-    left: 70%;
-    opacity: 0;
-    transition: all ease-out.5s;
-    width: auto;
-    border-radius: 1rem;
 }

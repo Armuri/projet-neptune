@@ -77,22 +77,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Reset Password</title>
 </head>
 <body>
-    <div class="boxmain">
-                <h1 class="neptune">Hotel Neptune</h1>
-            <div class="texte">
-                <p>L'Hotel Neptune est un hôtel Situé en face d'un port <br> de plaisance. </p> 
-                <img src="images/port marianne.jpg" alt="port marianne hotel neptune" style="max-width: 250px">
-                <p> Cet hôtel de style décontracté se trouve à 11 minutes <br> à pied de la plage et à 15,6 km du centre-ville de Montpellier.</p>
-                <img src="images/map montpellier.jpg" alt="map montpellier" style="max-width: 250px">
-            </div>
-        </div>  
-        <div class="boxmain2">
-                <h1 class="carnon">à Carnon</h1>
-            <div class="texte2">
-                <p>239 rue de l'étang de l'or Carnon-Port, 34130 Mauguio</p> 
-                <img src="images/map carnon.jpg" alt="map carnon hotel neptune" style="max-width: 300px">
-            </div>
-    </div>
     <div class="wrapper">
         <h2>Réinitialiser votre mot de passe</h2>
         <p>Veuillez remplir le formulaire pour réinitialiser votre mot de passe.</p>
@@ -109,7 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="submit" value="Envoyer">
-                <a href="bienvenue.php" class="reset"> Annuler</a>
+                <a href="bienvenue.php" class="reset2"> Annuler</a>
             </div>
         </form>
     </div>    

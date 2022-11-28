@@ -102,48 +102,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Formulaire d'inscription</title>
 </head> 
 <body>
-    <div class="boxmain">
-            <h1 class="neptune">Hotel Neptune</h1>
-        <div class="texte">
-            <p>L'Hotel Neptune est un hôtel Situé en face d'un port <br> de plaisance. </p> 
-            <img src="images/port marianne.jpg" alt="port marianne hotel neptune" style="max-width: 250px">
-            <p> Cet hôtel de style décontracté se trouve à 11 minutes <br> à pied de la plage et à 15,6 km du centre-ville de Montpellier.</p>
-            <img src="images/map montpellier.jpg" alt="map montpellier" style="max-width: 250px">
-        </div>
-    </div>  
-    <div class="boxmain2">
-            <h1 class="carnon">à Carnon</h1>
-        <div class="texte2">
-            <p>239 rue de l'étang de l'or Carnon-Port, 34130 Mauguio</p> 
-            <img src="images/map carnon.jpg" alt="map carnon hotel neptune" style="max-width: 300px">
-        </div>
-    </div>
-    <div class="wrapper">
-        <h2>Inscription</h2>
-        <p>Remplissez le formulaire pour créer votre compte</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label>Nom d'utilisateur :</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group">
-                <label>Mot de passe :</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <label>Confirmer votre mot de passe :</label>
-                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
-                <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
-            </div>
-            <div class="form-group1">
-                <input type="submit" class="submit" value="Envoyer">
-                <input type="reset" class="reset" value="Vider les valeurs">
-            </div>
-            <p>Vous avez déjà un compte? <a href="page-de-connexion.php" class="inscription">Connectez-vous ici</a>.</p>
-        </form>
-    </div>    
+        <h1 class="neptune">Hotel Neptune</h1>
+        <h1 class="carnon">à Carnon</h1>
+        <div class="wrapper">
+            <h2>Inscription</h2>
+            <p>Remplissez le formulaire pour créer votre compte</p>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <div class="form-group">
+                    <label>Nom d'utilisateur :</label>
+                    <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                    <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                </div>    
+                <div class="form-group">
+                    <label>Mot de passe :</label>
+                    <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                    <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                </div>
+                <div class="form-group">
+                    <label>Confirmer votre mot de passe :</label>
+                    <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
+                    <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
+                </div>
+                <div class="form-group1">
+                    <input type="submit" class="submit" value="Envoyer">
+                    <input type="reset" class="reset" value="Vider les valeurs">
+                </div>
+                <p>Vous avez déjà un compte? <a href="page-de-connexion.php" class="inscription">Connectez-vous ici</a>.</p>
+            </form>
+        </div> 
     <link rel="stylesheet" href="index.css">
 </body>
 </html>
