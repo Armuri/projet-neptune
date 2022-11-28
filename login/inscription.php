@@ -141,7 +141,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="submit" value="Envoyer">
                 <input type="reset" class="reset" value="Vider les valeurs">
             </div>
-            <p>Vous avez déjà un compte? <a href="page-de-connexion.php">Connectez-vous ici</a>.</p>
+            <p>Vous avez déjà un compte? <a href="page-de-connexion.php" class="inscription">Connectez-vous ici</a>.</p>
         </form>
     </div>    
     <link rel="stylesheet" href="index.css">

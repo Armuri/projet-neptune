@@ -37,22 +37,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
         
-    // Check input errors before updating the database
+    // on regarde si il y'a pas d'erreur avant de le transmettre à la ba
     if(empty($new_password_err) && empty($confirm_password_err)){
-        // Prepare an update statement
+        // on prépare le protocole de transfert des mots de passes
         $sql = "UPDATE users SET password = ? WHERE id = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
+            // association d'une variable à la préparation de protocole avec un paramètre
             mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
             
-            // Set parameters
+            // on définit les paramètres
             $param_password = password_hash($new_password, PASSWORD_DEFAULT);
             $param_id = $_SESSION["id"];
             
             // Exécution du protocole
             if(mysqli_stmt_execute($stmt)){
-                // le mot de passe a été mis à jour. La session va être détruite et l'utilisateur est redirifé vers la page de login
+                // le mot de passe a été mis à jour. La session va être détruite et l'utilisateur est redirigé vers la page de login
                 session_destroy();
                 header("location: page-de-connexion.php");
                 exit();
@@ -65,7 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
     
-    // Cferme la connexion
+    // ferme la connexion
     mysqli_close($link);
 }
 ?>
@@ -109,7 +109,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="submit" value="Envoyer">
-                <a href="bienvenue.php" class="reset">Annuler</a>
+                <a href="bienvenue.php" class="reset"> Annuler</a>
             </div>
         </form>
     </div>    
