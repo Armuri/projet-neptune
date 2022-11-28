@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Page de connexion</title>
 <body>
         <h1 class="neptune">Hotel Neptune</h1>
-        <h1 class="carnon">à Carnon</h1></div> 
+        <h1 class="carnon">à Carnon</h1>
         <div class="wrapper">
             <h2>Page de connexion</h2>
             <p>Entrez vos identifiants afin d'accéder à la réservation des chambres.</p>
