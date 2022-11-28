@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // vérifier l'authenticité de la requête de l'utilisateur 
     if(empty($username_err) && empty($password_err)){
         // on va se servir dans la base de données
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        $sql = "SELECT id_client, username, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // liaison des variables "$stmt" et "$param_username" à une requête MySQL
@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             
                             // on enregistre la data sur la ba mysql
                             $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
+                            $_SESSION["id_client"] = $id;
                             $_SESSION["username"] = $username;                            
                             
                             // redirection de l'user vers la page de bienvenue

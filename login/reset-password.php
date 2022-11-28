@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // on regarde si il y'a pas d'erreur avant de le transmettre à la ba
     if(empty($new_password_err) && empty($confirm_password_err)){
         // on prépare le protocole de transfert des mots de passes
-        $sql = "UPDATE users SET password = ? WHERE id = ?";
+        $sql = "UPDATE users SET password = ? WHERE id_client = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // association d'une variable à la préparation de protocole avec un paramètre
@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // on définit les paramètres
             $param_password = password_hash($new_password, PASSWORD_DEFAULT);
-            $param_id = $_SESSION["id"];
+            $param_id = $_SESSION["id_client"];
             
             // Exécution du protocole
             if(mysqli_stmt_execute($stmt)){
