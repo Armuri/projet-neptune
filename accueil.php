@@ -27,7 +27,7 @@
                 <h3>la plage se situe à 5 minutes de notre établissement</h3>
             </div>
             <div class="image-plage">
-                <img src="plage-carnon.jpg" height="300" width="400">
+                <img src="./images/plage-carnon.jpg" height="300" width="400">
             </div>
         </div>
         <br>
@@ -38,7 +38,7 @@
                 <h3>un accueil et une salle à manger où vous pourrez y prendre le petit-déjeuner le matin</h3>
             </div>
             <div class="image-description">
-                <img src="couloir-hotel.jpg" height="300" width="400">
+                <img src="./images/couloir-hotel.jpg" height="300" width="400">
             </div> 
         </div>
     </body>

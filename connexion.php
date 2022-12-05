@@ -1,6 +1,9 @@
 <?php
 
-require "./ba/helper.php"
+require "./ba/db-connexion.php";
+
+
+
 ?>
 
 
@@ -18,10 +21,10 @@ require "./ba/helper.php"
         <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page de connexion.</p>
         <form method="POST" action="connexion.php">
-                  <input type="login" name="login" placeholder="Nom d'utilisateur" required>
-                  <br><br>
-                  <input type="password" name="password" placeholder="Mot de passe" required>
-                  <br><br>
+                  <input type="login" name="login" placeholder="Nom d'utilisateur*" required>
+                  <br>
+                  <input type="password" name="password" placeholder="Mot de passe*" required>
+                  <br>
                   <input type="submit" name="submit" value="Se connecter" >
         </form>
         <link rel="stylesheet" href="./css/index.css">
