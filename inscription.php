@@ -1,6 +1,6 @@
 <?php
 
-require_once "./ba/helper.php";
+require "./ba/helper.php"
 
 ?>
 
@@ -19,23 +19,25 @@ require_once "./ba/helper.php";
         <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page d'inscription.</p>
               <form method="POST">
-                  <p>Nom</p>
-                  <input type="text" name="nom" id="nom">
-                  <p>Prénom</p>
-                  <input type="text" name="prenom" id="prenom">
-                  <p>Mail</p>
-                  <input type="text" name="mail" id="mail">
-                  <p>Nom d'utilisateur</p>
-                  <input type="text" name="login" id="login">
-                  <p>Mot de passe </p>
-                  <input type="text" name="password" id="password">
+                  <input type="text" name="nom" placeholder="Nom" required>
+                  <br><br>
+                  <input type="text" name="prenom" placeholder="Prénom" required>
+                  <br><br>
+                  <input type="email" name="email" placeholder="xxx@xxx.com" required>
+                  <br><br>
+                  <input type="login" name="login" placeholder="Nom d'utilisateur" required>
+                  <br><br>
+                  <input type="password" name="password" placeholder="Mot de passe" required>
+                  <br><br>
+
                   <!--
                   <p>Confirmer votre mot de passe</p>
                   <input type="text" name="confirm-password" id="confirm-password">
                   <br>
                   -->
+                  <input type="checkbox" name="checkbox" placeholder="Mémoriser ma connexion">
                   <br>
-                  <input type="submit" name="envoyer">
+                  <input type="submit" name="submit" value="S'inscrire" >
               </form>
     <link rel="stylesheet" href="./css/index.css">
 </body>
