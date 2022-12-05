@@ -11,7 +11,8 @@ session_start();
         <a href="accueil.php"><li>Accueil</li></a>
         <a href="chambre.php"><li>Chambre</li></a>
         <a href="contact.php"><li>Contact</li></a>
-        <a href="inscription.php"><li>Connexion</li></a>
+        <a href="inscription.php"><li>Inscription</li></a>
+        <a href="connexion.php"><li>Connexion</li></a>
     </ul>
         
     <link rel="stylesheet" href="./css/nav.css">

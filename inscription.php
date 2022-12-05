@@ -18,7 +18,7 @@ require "./ba/helper.php"
     </header>
         <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page d'inscription.</p>
-              <form method="POST">
+              <form method="POST" action="connexion.php">
                   <input type="text" name="nom" placeholder="Nom" required>
                   <br><br>
                   <input type="text" name="prenom" placeholder="Prénom" required>

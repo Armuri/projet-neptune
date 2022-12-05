@@ -12,6 +12,12 @@ if (isset ($_POST["prenom"])){
     $prenom = "";
 }
 
+if (isset ($_POST["mail"])){
+    $mail = $_POST["mail"];
+}else {
+    $mail = "";
+}
+
 if (isset ($_POST["login"])){
     $login = $_POST["login"];
 }else {
@@ -24,11 +30,6 @@ if (isset ($_POST["password"])){
     $password = "";
 }
 
-if (isset ($_POST["mail"])){
-    $mail = $_POST["mail"];
-}else {
-    $mail = "";
-}
 
 
 if (empty($_POST["nom"]) && (isset ($_POST["prenom"])) && (isset ($_POST["login"])) && (isset ($_POST["mail"]))  && (isset($_POST["password"]))){
