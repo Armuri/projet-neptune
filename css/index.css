@@ -20,3 +20,26 @@ input {
     padding: 1%;
     border-radius: 1em;
 }
+.adresse{
+    border:solid 1px black;
+    text-align: center;
+}
+.description{
+    border:solid 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hotel-description{
+    border:solid 1px black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.texte-hotel{
+    align-self:center;
+    position: relative;
+    right: 20%;
+}
