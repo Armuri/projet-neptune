@@ -10,14 +10,15 @@ h1 {
 
 form {
     border : 2px solid black;
+    border-radius: 1em;
     width: 25%;
-    background-color: rgb(132, 255, 55);
+    background-color: rgb(72, 166, 255);
     padding: 2%;
 }
 
 input {
     border: 1px solid black;
-    padding: 1%;
+    padding: 2%;
     border-radius: 1em;
 }
 .adresse{
