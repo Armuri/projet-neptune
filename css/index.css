@@ -44,3 +44,17 @@ input {
     position: relative;
     right: 20%;
 }
+.tourisme-description{
+    border:solid 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.image-tourismes{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+}
+
+
