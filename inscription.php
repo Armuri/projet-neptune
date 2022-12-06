@@ -19,7 +19,7 @@ require "./ba/inscription.php";
     </header>
         <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page d'inscription, remplissez les champs suivants afin de créer votre compte.</p>
-              <form method="POST" action="connexion.php">
+              <form method="POST" action="">
                   <input type="text" name="nom" placeholder="Nom*" required>
                   <br>
                   <input type="text" name="prenom" placeholder="Prénom*" required>
