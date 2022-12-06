@@ -1,7 +1,7 @@
 <?php
 
-require "./ba/db-connexion.php";
-
+require "./ba/link-mysql.php" ;
+require "./ba/connexion.php";
 
 
 ?>
@@ -27,6 +27,6 @@ require "./ba/db-connexion.php";
                   <br>
                   <input type="submit" name="submit" value="Se connecter" >
         </form>
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/form.css">
 </body>
 </html>

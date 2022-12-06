@@ -1,7 +1,7 @@
 <?php
 
-
-require "./ba/helper.php";
+require "./ba/link-mysql.php";
+require "./ba/inscription.php";
 
 ?>
 
@@ -36,7 +36,7 @@ require "./ba/helper.php";
                   <input type="submit" name="submit" value="S'inscrire" >
                   <p>Vous avez déjà un compte ? Connectez-vous <a href="connexion.php" class="connexion">ici</a>.</p>
               </form>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/form.css">
 </body>
 </html>
 

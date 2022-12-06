@@ -1,9 +1,10 @@
 <?php
 
+require "link-mysql.php";
 
 if (isset ($_POST["nom"])){
     $nom = $_POST["nom"];
-}else {
+}else { 
     $nom = "";
 }
 
@@ -53,20 +54,11 @@ if ((isset ($_POST["password"])) &&  (isset ($_POST["login"])) &&  empty ($_POST
     echo "Veuillez entrer votre adresse e-mail.";  
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $insert = $dbh->prepare("INSERT INTO users (nom, prenom, mail, nom_utilisateur, mot_de_passe, ) VALUES ('$nom', '$prenom','$email','$login','$password')");
+    $insert->execute(array('nom' => $nom, 'prenom' => $prenom, 'mail' => $email, 'nom_utilisateur' => $login, 'mot_de_passe' => $password ));
 
-$dsn = 'mysql:host=localhost;dbname=projet-neptune';  // avant tout il faut créer une nouvelle base de donnée à partir de PHPmyadmin qui portera le nom 'projet-neptune'
-$user = 'Arthur'; // à modifier selon le compte ('root' généralement)
-$password = 'password'; // champ laissé à vide quand on se connecte avec le compte 'root' sinon mettre votre mdp.
-
-try {
-    $dbh = new PDO($dsn, $user, $password);
-    $insert = $dbh->prepare("INSERT INTO `users` (nom, prenom, nom_utilisateur, mot_de_passe, mail) VALUES ('$nom', '$prenom','$login','$password','$email')");
-    $insert->execute(array('nom' => $nom , 'prenom' => $prenom , 'nom_utilisateur' => $login , 'mot_de_passe' => $password , 'mail' => $email));
-
-} catch (PDOException $e) {
-    echo 'champs manquants, réesayer' . $e -> getMessage() ;
 }
-   
 
 ?>
 

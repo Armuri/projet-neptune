@@ -8,27 +8,6 @@ h1 {
     font-size: 25px;
 }
 
-form {
-    border : 2px solid black;
-    border-radius: 1em;
-    width: 25%;
-    background-color: rgb(72, 166, 255);
-    padding: 2%;
-}
-
-a.connexion:focus,
-a.connexion:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-input {
-    display: flex;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 2%;
-    border-radius: 1em;
-    align-items: center;
-}
 .adresse{
     border:solid 1px black;
     text-align: center;
@@ -52,6 +31,7 @@ input {
     position: relative;
     right: 20%;
 }
+
 .tourisme-description{
     border:solid 1px black;
     display: flex;
@@ -64,5 +44,3 @@ input {
    display: grid;
    grid-template-columns: 2fr 1fr;
 }
-
-
