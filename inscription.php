@@ -1,7 +1,7 @@
 <?php
 
-
-require "./ba/helper.php";
+require "./ba/link-mysql.php";
+require "./ba/inscription.php";
 
 ?>
 
@@ -19,7 +19,7 @@ require "./ba/helper.php";
     </header>
         <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page d'inscription, remplissez les champs suivants afin de créer votre compte.</p>
-              <form method="POST" action="connexion.php">
+              <form method="POST" action="">
                   <input type="text" name="nom" placeholder="Nom*" required>
                   <br>
                   <input type="text" name="prenom" placeholder="Prénom*" required>
@@ -34,9 +34,9 @@ require "./ba/helper.php";
                   <input type="password" name="confirm-password" placeholder="Confirmer votre mot de passe*" required>
                   <br> -->
                   <input type="submit" name="submit" value="S'inscrire" >
-                  <p>Vous avez déjà un compte ? Connectez-vous <a href="connexion.php" class="connexion">ici</a>.</p>
+                  <p>Vous avez déjà un compte ? Connectez-vous <a href="connexion.php">ici</a>.</p>
               </form>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/form.css">
 </body>
 </html>
 
