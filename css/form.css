@@ -39,8 +39,17 @@ form {
     animation: slide .8s;
 }
 
-a.connexion:focus,
-a.connexion:hover {
+a {
+    color: black;
+}
+
+a:focus,
+a:hover {
+    background-color: rgb(113, 253, 113);
+    border-radius: 1em;
+    transition: ease .3s;
+    padding: 1.5%;
+    width: fit-content;
     color: white;
     text-decoration: underline;
 }

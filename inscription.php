@@ -34,7 +34,7 @@ require "./ba/inscription.php";
                   <input type="password" name="confirm-password" placeholder="Confirmer votre mot de passe*" required>
                   <br> -->
                   <input type="submit" name="submit" value="S'inscrire" >
-                  <p>Vous avez déjà un compte ? Connectez-vous <a href="connexion.php" class="connexion">ici</a>.</p>
+                  <p>Vous avez déjà un compte ? Connectez-vous <a href="connexion.php">ici</a>.</p>
               </form>
     <link rel="stylesheet" href="./css/form.css">
 </body>
