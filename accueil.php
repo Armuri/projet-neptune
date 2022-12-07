@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hotel Neptune : Accueil</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <h1>Hôtel Neptune</h1>
     </header>
     <?php include('./nav-bar.php'); ?>
-    
-    <link rel="stylesheet" href="./css/index.css">
     <br>
         <div class="adresse">
         <h2>161 Avenue Grassion Cibrand, 34280 Carnon.</h2>
@@ -26,11 +25,7 @@
                 <h3>la plage se situe à 5 minutes de notre établissement.</h3>
             </div>
             <div class="image-plage">
-<<<<<<< HEAD
                 <img src="Images/plage-carnon.jpg" height="300" width="400">
-=======
-                <img src="./images/plage-carnon.jpg" height="300" width="400">
->>>>>>> 891cd3f3bd2e6696e35518cb7e547f170fe129a8
             </div>
         </div>
         <br>
@@ -41,11 +36,7 @@
                 <h3>un accueil et une salle à manger où vous pourrez y prendre le petit-déjeuner le matin</h3>
             </div>
             <div class="image-description">
-<<<<<<< HEAD
                 <img src="Images/couloir-hotel.jpg" height="300" width="400">
-=======
-                <img src="./images/couloir-hotel.jpg" height="300" width="400">
->>>>>>> 891cd3f3bd2e6696e35518cb7e547f170fe129a8
             </div> 
         </div>
         <br>
@@ -67,6 +58,7 @@
                <img src="Images/plagedupetittravers.png" alt="Plage du petit travers" height="180" width="280">
                 <img src="Images/eglise-saint-jean-du-malte.jpg" alt="Eglise Saint-Jean du Malte" height="180" width="280">
                 <img src="Images/port-de-carnon.png" alt="Port de carnon" height="180" width="280">
+        </div>
         </div>
     </body>
         <footer>

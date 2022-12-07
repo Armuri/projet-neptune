@@ -45,6 +45,7 @@ input {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding: 50px;
 }
 
 .texte-hotel{
@@ -53,16 +54,16 @@ input {
     right: 20%;
 }
 .tourisme-description{
-    border:solid 1px black;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 100px;
+    padding: 500px;
 }
 
 .image-tourismes{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
+   display: flex;
+   display: inline-flex;
 }
 
 
