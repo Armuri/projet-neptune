@@ -13,6 +13,7 @@ h1 {
     text-align: center;
 }
 .description{
+    padding: 1%;
     border:solid 1px black;
     display: flex;
     flex-direction: row;
@@ -20,6 +21,7 @@ h1 {
 }
 
 .hotel-description{
+    padding: 1%;
     border:solid 1px black;
     display: flex;
     flex-direction: row-reverse;
