@@ -8,8 +8,5 @@ try {
     $dbh = new PDO($dsn, $user, $password);
 } 
 catch (PDOException $e) {
-    echo 'champs manquants, réesayer' . $e -> getMessage() ;
+    echo 'ERROR, RETRY.' . $e -> getMessage() ;
 }
-   // $select = $dbh->prepare("SELECT * FROM users WHERE 'nom_utilisateur' =:nom_utilisateur AND 'mot_de_passe' =:mot_de_passe ;");
-    // $select->execute(array( 'nom_utilisateur' => $login, 'mot_de_passe' => $password));
-    // $result = $select->fetchAll();

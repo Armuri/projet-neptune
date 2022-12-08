@@ -28,6 +28,7 @@ if (isset ($_POST["login"])){
 
 if (isset ($_POST["password"])){
     $password = $_POST["password"];
+    $password = md5($password);
 }else {
     $password = "";
 }
