@@ -16,13 +16,13 @@ require "./ba/connexion.php";
 <body>
     <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page de connexion.</p>
-        <form method="POST">
+        <form method="POST" action="accueil.php">
                   <input type="login" name="login" placeholder="Nom d'utilisateur*" required>
                   <br>
                   <input type="password" name="password" placeholder="Mot de passe*" required>
                   <br>
                   <input class="submit" type="submit" name="submit" value="Se connecter" >
-                  <p>Vous n'avez pas de compte ?<a href="inscription.php"> Cliquez ici  pour le créer </a> </p>
+                  <p class="compte">Vous n'avez pas de compte ?<a href="inscription.php"> Cliquez ici  pour le créer </a> </p>
         </form>
         <link rel="stylesheet" href="./css/form.css">
 </body>
