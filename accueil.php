@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <h1>Hôtel Neptune</h1>
-    </header>
     <?php include('./nav-bar.php'); ?>
     <br>
         <div class="adresse">
