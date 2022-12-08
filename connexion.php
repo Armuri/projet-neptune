@@ -18,7 +18,7 @@ require "./ba/connexion.php";
     <header>
         <h1>Hôtel Neptune</h1>
     </header>
-        <?php include('./nav-bar.php'); ?>
+    <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page de connexion.</p>
         <form method="POST" action="connexion.php">
                   <input type="login" name="login" placeholder="Nom d'utilisateur*" required>

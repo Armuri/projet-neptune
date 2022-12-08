@@ -6,6 +6,8 @@ session_start();
 
 
 <html>
+<head>
+</head>
    <body>
     <ul>
         <a href="accueil.php"><li>Accueil</li></a>
@@ -17,8 +19,7 @@ session_start();
     <link rel="stylesheet" href="./css/nav.css">
 </body> 
 </html>
-<head>
-</head>
+
 
 <!-- <style>.box_triangle {
         width: 0px;
