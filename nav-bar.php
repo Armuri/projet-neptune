@@ -2,9 +2,7 @@
 
 include "./ba/connexion.php";
 
-
 ?>
-
 
 <html>
 <head>

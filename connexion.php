@@ -2,9 +2,7 @@
 
 require "./ba/connexion.php";
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="FR">

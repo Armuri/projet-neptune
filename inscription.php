@@ -1,8 +1,8 @@
 <?php
+
 require "./ba/inscription.php";
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="FR">

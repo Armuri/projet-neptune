@@ -17,15 +17,15 @@
     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Faire une recherche.." title="Type in a category">
     <ul id="myMenu">
 
-      <li><a href="#">Chambre Simple Deluxe</a></li>
-      <li><a href="#">Chambre Simple Economique</a></li>
-      <li><a href="#">Chambre Double Deluxe</a></li>
-      <li><a href="#">Chambre Double Economique</a></li>
-      <li><a href="#">Chambre Double Classique</a></li>
-      <li><a href="#">Chambre Double Confort.</a></li>
-      <li><a href="#">Chambre Lits Jumeaux Classique</a></li>
-      <li><a href="#">Chambre Triple Economique</a></li>
-      <li><a href="#">Chambre Quadruple Familiale</a></li>
+      <li><a href="./chambres/chambre-simple-deluxe.php">Chambre Simple Deluxe</a></li>
+      <li><a href="./chambres/chambre-simple-economique.php">Chambre Simple Economique</a></li>
+      <li><a href="./chambres/chambre-double-deluxe.php">Chambre Double Deluxe</a></li>
+      <li><a href="./chambres/chambre-double-economique.php">Chambre Double Economique</a></li>
+      <li><a href="./chambres/chambre-double-classique.php">Chambre Double Classique</a></li>
+      <li><a href="./chambres/chambre-double-confort.php">Chambre Double Confort</a></li>
+      <li><a href="./chambres/chambre-lits-jumeaux-classique.php">Chambre Lits Jumeaux Classique</a></li>
+      <li><a href="./chambres/chambre-triple-economique.php">Chambre Triple Economique</a></li>
+      <li><a href="./chambres/chambre-triple-classique.php">Chambre Triple Classique</a></li>
       
     </ul>
   </div>
