@@ -51,10 +51,11 @@
                 <h3>D'autres lieux et activités à découvrir peut-être vu</h3>
                 <h3>sur le site du <a href="https://www.petitfute.com/v53805-carnon-34280/">Petit Futé</a></h3>
             </div>
-            <div class="images-tourismes">
-               <img src="Images/plagedupetittravers.png" alt="Plage du petit travers" height="180" width="280">
-                <img src="Images/eglise-saint-jean-du-malte.jpg" alt="Eglise Saint-Jean du Malte" height="180" width="280"></div>
-                <img src="Images/port-de-carnon.png" alt="Port de carnon" height="180" width="280">
+            <div class="images">
+            <img src="Images/plagedupetittravers.png" alt="plage-du-petit-travers" width="300" height="200">
+            <img src="Images/plage-carnon.jpg" alt="plage-carnon" width="300" height="200">
+            <div class="img-middle"><img src="Images/eglise-saint-jean-du-malte.jpg" alt="eglise-saint-jean-du-malte" width="300" height="200"></div>
+            </div>
         </div>
         </div>
     </body>
