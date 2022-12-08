@@ -40,14 +40,15 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 500px;
+    padding: 50px;
 }
+
+
 
 .image-tourismes{
    display: flex;
    display: inline-flex;
 }
-
 
 .image-tourismes{
    display: grid;
