@@ -36,21 +36,19 @@ h1 {
 }
 
 .tourisme-description{
-    
+    border:solid 1px black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px;
 }
 
-
-
 .image-tourismes{
    display: flex;
    display: inline-flex;
+   justify-content: space-between;
 }
 
-.image-tourismes{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
+.middle-img{
+    align-self: flex-end;
 }
