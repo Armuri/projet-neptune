@@ -51,7 +51,6 @@ input {
 }
 
 input:focus {
-    color: white;
     transition: .6s;
     padding:3%;
 }
