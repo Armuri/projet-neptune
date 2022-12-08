@@ -2,7 +2,9 @@ html {
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+body{
+    background-color: rgb(26, 124, 204)
+}
 h1 {
     text-align: center;
     font-size: 25px;
@@ -11,20 +13,26 @@ h1 {
 .adresse{
     border:solid 1px black;
     text-align: center;
+    background-color: rgb(64, 182, 255);
 }
 .description{
     padding: 1%;
     border:solid 1px black;
-    background-color: rgb(66, 66, 173);
+    background-color: rgb(26, 124, 204);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.texte-description{
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(64, 182, 255);
 }
 
 .hotel-description{
     padding: 1%;
     border:solid 1px black;
-    background-color: rgb(66, 66, 173);
+    background-color: rgb(26, 124, 204);
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -35,17 +43,24 @@ h1 {
     align-self:center;
     position: relative;
     right: 20%;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(64, 182, 255);
 }
 
 .tourisme-description{
     border:solid 1px black;
-    background-color: rgb(66, 66, 173);
+    background-color: rgb(26, 124, 204);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 50px;
 }
-
+.texte-tourisme{
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(64, 182, 255);
+}
 
 .img-middle{
     position: absolute;

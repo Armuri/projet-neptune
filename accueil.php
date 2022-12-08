@@ -17,7 +17,8 @@
             <div class="texte-description">
                 <u><h2>Bienvenue à l'hôtel Neptune</h2></u>
                 <h3>L'hôtel Néptune est une somptueuse chambre d'hôte se situant à côté de la mer méditéranée.</h3>
-                <h3>Ici vous pourrez profiter du comfort et de la simplicité de nos chambres.Ainsi que de l'accueil et le professionalisme de notre personnel.</h3>
+                <h3>Ici vous pourrez profiter du comfort et de la simplicité de nos chambres.</h3>
+                <h3>Ainsi que de l'accueil et le professionalisme de notre personnel.</h3>
                 <br>
                 <h3>la plage se situe à 5 minutes de notre établissement.</h3>
             </div>
