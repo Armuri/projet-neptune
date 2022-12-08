@@ -1,6 +1,9 @@
+body {
+    margin: 0;
+}
+
 nav {
     border: 10px solid grey;
-    border-radius: 1em;
     background-color: grey;
 }
 li {
