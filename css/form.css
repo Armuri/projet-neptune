@@ -40,7 +40,8 @@ form {
 }
 
 a {
-    color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 a:focus,
@@ -56,4 +57,8 @@ input {
     padding: 2%;
     border-radius: 1em;
     align-items: center;
+}
+
+.submit {
+    cursor: move;
 }
