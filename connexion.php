@@ -16,7 +16,7 @@ require "./ba/connexion.php";
 <body>
     <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page de connexion.</p>
-        <form method="POST">
+        <form method="POST" action="accueil.php">
                   <input type="login" name="login" placeholder="Nom d'utilisateur*" required>
                   <br>
                   <input type="password" name="password" placeholder="Mot de passe*" required>
