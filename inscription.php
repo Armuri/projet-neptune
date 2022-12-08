@@ -1,6 +1,4 @@
 <?php
-
-require "./ba/link-mysql.php";
 require "./ba/inscription.php";
 
 ?>
@@ -33,8 +31,8 @@ require "./ba/inscription.php";
                   <!-- 
                   <input type="password" name="confirm-password" placeholder="Confirmer votre mot de passe*" required>
                   <br> -->
-                  <input class="submit" ctype="submit" name="submit" value="S'inscrire" >
-                  <p>Vous avez déjà un compte ? Connectez-vous <a href="connexion.php">ici</a>.</p>
+                  <input class="submit" type="submit" name="submit" value="S'inscrire" >
+                  <p class="connexiond">Vous avez déjà un compte ? <a href="connexion.php">Cliquez ici</a></p>
               </form>
     <link rel="stylesheet" href="./css/form.css">
 </body>

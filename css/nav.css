@@ -1,8 +1,11 @@
-
-
+nav {
+    border: 1px solid grey;
+    border-radius: 1em;
+    background-color: grey;
+}
 li {
     list-style: none;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 a {
@@ -12,5 +15,4 @@ a {
 ul {
     display: flex;
     justify-content: space-around;
-    background-color: blue;
 }
