@@ -50,12 +50,13 @@ a:hover {
     font-size: 20px;
     transition: .2s;
     background-color: grey;
-    border-radius: 1em;
+    padding: 1px;
     padding: 2%;
     color: white;
 }
 
 input {
+    color: rgb(0, 0, 0);
     margin-left: 30%;
     display: flex;
     text-align: center;
@@ -65,7 +66,8 @@ input {
 }
 
 input:focus {
-    transition: .5s;
+    color: white;
+    transition: .6s;
     padding:3%;
 }
 
@@ -78,7 +80,7 @@ input.submit {
 input.submit:hover,
 input.submit:focus {
     background-color: rgb(95, 95, 234);
-    transition: ease-in-out .3s;
+    transition: ease-in-out .4s;
     padding:3%;
 }
 
