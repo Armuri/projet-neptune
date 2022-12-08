@@ -39,16 +39,14 @@ h1 {
     border:solid 1px black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 50px;
+    justify-content: space-evenly;
+    padding: 80px;
+    justify-self: center;
 }
 
 .image-tourismes{
    display: flex;
-   display: inline-flex;
-   justify-content: space-between;
+   flex-direction: row-reverse;
+   border:solid 2px black;
 }
 
-.middle-img{
-    align-self: flex-end;
-}
