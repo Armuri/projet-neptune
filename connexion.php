@@ -22,7 +22,7 @@ require "./ba/connexion.php";
                   <input type="password" name="password" placeholder="Mot de passe*" required>
                   <br>
                   <input class="submit" type="submit" name="submit" value="Se connecter" >
-                  <p>Vous n'avez pas de compte ?<a href="inscription.php"> Cliquez ici  pour le créer </a> </p>
+                  <p class="compte">Vous n'avez pas de compte ?<a href="inscription.php"> Cliquez ici  pour le créer </a> </p>
         </form>
         <link rel="stylesheet" href="./css/form.css">
 </body>

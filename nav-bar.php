@@ -11,6 +11,7 @@ session_start();
    <body>
     <nav>
     <ul>
+        <h1> <?php ?> </h1>
         <a href="accueil.php"><li>Accueil</li></a>
         <a href="chambre.php"><li>Chambre</li></a>
         <a href="contact.php"><li>Contact</li></a>
