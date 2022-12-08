@@ -15,6 +15,7 @@ h1 {
 .description{
     padding: 1%;
     border:solid 1px black;
+    background-color: rgb(66, 66, 173);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,6 +24,7 @@ h1 {
 .hotel-description{
     padding: 1%;
     border:solid 1px black;
+    background-color: rgb(66, 66, 173);
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -37,16 +39,16 @@ h1 {
 
 .tourisme-description{
     border:solid 1px black;
+    background-color: rgb(66, 66, 173);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 80px;
-    justify-self: center;
+    padding: 50px;
 }
 
-.image-tourismes{
-   display: flex;
-   flex-direction: row-reverse;
-   border:solid 2px black;
+
+.img-middle{
+    position: absolute;
+    right: 320px; 
 }
 
