@@ -9,6 +9,7 @@ session_start();
 <head>
 </head>
    <body>
+    <nav>
     <ul>
         <a href="accueil.php"><li>Accueil</li></a>
         <a href="chambre.php"><li>Chambre</li></a>
@@ -17,6 +18,7 @@ session_start();
     </ul>
         
     <link rel="stylesheet" href="./css/nav.css">
+    </nav>
 </body> 
 </html>
 

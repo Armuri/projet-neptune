@@ -28,6 +28,7 @@ h1 {
 /* end animation  */
 
 
+
 form {
     border : 2px solid black;
     border-radius: 1em;
@@ -39,26 +40,31 @@ form {
     animation: slide .8s;
 }
 
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-a:focus,
-a:hover {
-    width: fit-content;
-    color: white;
-    text-decoration: underline;
-}
-
 input {
+    color: rgb(0, 0, 0);
+    margin-left: 30%;
     display: flex;
+    text-align: center;
     border: 1px solid rgb(0, 0, 0);
     padding: 2%;
     border-radius: 1em;
-    align-items: center;
 }
 
-.submit {
-    cursor: move;
+input:focus {
+    transition: .6s;
+    padding:3%;
 }
+
+input.submit {
+    width: 30%;
+    cursor: pointer;
+    margin-left: 33.5% ;
+}
+
+input.submit:hover,
+input.submit:focus {
+    background-color: rgb(95, 95, 234);
+    transition: ease-in-out .4s;
+    padding:3%;
+}
+

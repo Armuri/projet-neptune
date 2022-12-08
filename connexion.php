@@ -1,6 +1,5 @@
 <?php
 
-require "./ba/link-mysql.php" ;
 require "./ba/connexion.php";
 
 
@@ -15,9 +14,6 @@ require "./ba/connexion.php";
     <title>Hotel Neptune : Connexion</title>
 </head>
 <body>
-    <header>
-        <h1>Hôtel Neptune</h1>
-    </header>
     <?php include('./nav-bar.php'); ?>
         <p>Vous êtes dans la page de connexion.</p>
         <form method="POST" action="connexion.php">
@@ -26,7 +22,7 @@ require "./ba/connexion.php";
                   <input type="password" name="password" placeholder="Mot de passe*" required>
                   <br>
                   <input class="submit" type="submit" name="submit" value="Se connecter" >
-                  <p>Vous n'avez pas de compte ? Cliquez <a href="inscription.php">ici</a>  pour le créer ! </p>
+                  <p>Vous n'avez pas de compte ?<a href="inscription.php"> Cliquez ici  pour le créer </a> </p>
         </form>
         <link rel="stylesheet" href="./css/form.css">
 </body>
