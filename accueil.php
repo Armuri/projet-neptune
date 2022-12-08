@@ -33,7 +33,7 @@
                 <h3>un accueil et une salle à manger où vous pourrez y prendre le petit-déjeuner le matin</h3>
             </div>
             <div class="image-description">
-                <img src="./images/couloir-hotel.jpg" height="300" width="400">
+                <img src="Images/couloir-hotel.jpg" height="300" width="400">
             </div> 
         </div>
         <br>
@@ -53,7 +53,7 @@
             </div>
             <div class="images-tourismes">
                <img src="Images/plagedupetittravers.png" alt="Plage du petit travers" height="180" width="280">
-                <img src="Images/eglise-saint-jean-du-malte.jpg" alt="Eglise Saint-Jean du Malte" height="180" width="280">
+                <img src="Images/eglise-saint-jean-du-malte.jpg" alt="Eglise Saint-Jean du Malte" height="180" width="280"></div>
                 <img src="Images/port-de-carnon.png" alt="Port de carnon" height="180" width="280">
         </div>
         </div>
