@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hotel Neptune : Accueil</title>
+    <title>Accueil - Hotel Neptune</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -17,8 +19,7 @@
             <div class="texte-description">
                 <u><h2>Bienvenue à l'hôtel Neptune</h2></u>
                 <h3>L'hôtel Néptune est une somptueuse chambre d'hôte se situant à côté de la mer méditéranée.</h3>
-                <h3>Ici vous pourrez profiter du comfort et de la simplicité de nos chambres.</h3>
-                <h3>Ainsi que de l'accueil et le professionalisme de notre personnel.</h3>
+                <h3>Ici vous pourrez profiter du comfort et de la simplicité de nos chambres.Ainsi que de l'accueil et le professionalisme de notre personnel.</h3>
                 <br>
                 <h3>la plage se situe à 5 minutes de notre établissement.</h3>
             </div>
@@ -34,7 +35,7 @@
                 <h3>un accueil et une salle à manger où vous pourrez y prendre le petit-déjeuner le matin</h3>
             </div>
             <div class="image-description">
-                <img src="Images/couloir-hotel.jpg" height="300" width="400">
+                <img src="./images/couloir-hotel.jpg" height="300" width="400">
             </div> 
         </div>
         <br>
@@ -52,11 +53,10 @@
                 <h3>D'autres lieux et activités à découvrir peut-être vu</h3>
                 <h3>sur le site du <a href="https://www.petitfute.com/v53805-carnon-34280/">Petit Futé</a></h3>
             </div>
-            <div class="images">
-            <img src="Images/plagedupetittravers.png" alt="plage-du-petit-travers" width="300" height="200">
-            <img src="Images/plage-carnon.jpg" alt="plage-carnon" width="300" height="200">
-            <div class="img-middle"><img src="Images/eglise-saint-jean-du-malte.jpg" alt="eglise-saint-jean-du-malte" width="300" height="200"></div>
-            </div>
+            <div class="images-tourismes">
+               <img src="Images/plagedupetittravers.png" alt="Plage du petit travers" height="180" width="280">
+                <img src="Images/eglise-saint-jean-du-malte.jpg" alt="Eglise Saint-Jean du Malte" height="180" width="280">
+                <img src="Images/port-de-carnon.png" alt="Port de carnon" height="180" width="280">
         </div>
         </div>
     </body>

@@ -1,6 +1,7 @@
 <?php
 
-session_start();
+include "./ba/connexion.php";
+
 
 ?>
 
@@ -9,16 +10,17 @@ session_start();
 <head>
 </head>
    <body>
+    <link rel="stylesheet" href="./css/nav.css">
     <nav>
-    <ul>
-        <h1> <?php ?> </h1>
-        <a href="accueil.php"><li>Accueil</li></a>
-        <a href="chambre.php"><li>Chambre</li></a>
-        <a href="contact.php"><li>Contact</li></a>
-        <a href="connexion.php"><li>Connexion/Inscription</li></a>
+    <ul class="ulnavbar">
+        <h1> </h1>
+        <a href="accueil.php"><li class="linavbar">Accueil</li></a>
+        <a href="./presentation-chambres.php"><li class="linavbar">Les Chambres</li></a>
+        <a href="contact.php"><li class="linavbar">Contact</li></a>
+        <a href="connexion.php"><li class="linavbar">Connexion/Inscription</li></a>
+
     </ul>
         
-    <link rel="stylesheet" href="./css/nav.css">
     </nav>
 </body> 
 </html>
