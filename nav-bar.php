@@ -1,14 +1,14 @@
 <?php
 
-session_start();
+include "./ba/connexion.php";
 
 ?>
-
 
 <html>
 <head>
 </head>
    <body>
+    <link rel="stylesheet" href="./css/nav.css">
     <nav>
     <ul>
         <h1> <?php ?> </h1>
@@ -16,10 +16,8 @@ session_start();
         <a href="chambre.php"><li>Chambre</li></a>
         <a href="contact.php"><li>Contact</li></a>
         <a href="connexion.php"><li>Connexion/Inscription</li></a>
-        <a href=""><li>Administration</li></a>
     </ul>
         
-    <link rel="stylesheet" href="./css/nav.css">
     </nav>
 </body> 
 </html>

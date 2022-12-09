@@ -3,18 +3,19 @@ body {
 }
 
 nav {
-    border: 10px solid grey;
-    background-color: grey;
+    padding: .002%;
+    background-color: grey; 
 }
-li {
-    font-size: 20px;
+.linavbar {   
+    font-size: 17px;
     list-style: none;
     color: rgb(0, 0, 0);
 }
 
-li:hover,
-li:focus {
-    transition: ease-in 0.2s;
+.linavbar:hover,
+.linavbar:focus {
+    transition: ease-in 0.4s;
+    font-size:24px ;
     color:rgb(255, 255, 255)
 }
 
@@ -22,8 +23,9 @@ a {
     text-decoration: none;
 }
 
-ul {
+.ulnavbar {
+    align-items: center;
     display: flex;
-    gap: 15px;
+    gap: 35px;
     margin-left:15%;
 }

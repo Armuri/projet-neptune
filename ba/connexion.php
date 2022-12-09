@@ -1,6 +1,13 @@
 <?php
 
-require_once "link-mysql.php";
+require "link-mysql.php";
+
+if (isset ($_POST["prenom"])){
+    $prenom = $_POST["prenom"];
+}else {
+    $prenom = "";
+}
+
 
 if (isset ($_POST["login"])){
     $login = $_POST["login"];
@@ -21,8 +28,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $select->fetch();
 
     if(!$result) {
-        header('Location/accueil.php');
+        header('Location/inscription.php');
     }
+        session_start();
+        $_SESSION['prenom'] = $prenom;
         header('Location/accueil.php');
         exit;
 }
