@@ -16,6 +16,7 @@ session_start();
         <a href="chambre.php"><li>Chambre</li></a>
         <a href="contact.php"><li>Contact</li></a>
         <a href="connexion.php"><li>Connexion/Inscription</li></a>
+        <a href=""><li>Administration</li></a>
     </ul>
         
     <link rel="stylesheet" href="./css/nav.css">
