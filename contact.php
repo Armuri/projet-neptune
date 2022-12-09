@@ -7,10 +7,7 @@
 </head>
 <body>
     <?php include('./nav-bar.php'); ?>
-    <article>Facebook</article>
-    <article>Twitter</article>
-    <article></article>
-    <article></article>
+    <img src="./images-chambres/chambre-double-classique.jpg" height="300" width="400">
     <link rel="stylesheet" href="./css/index.css">
 </body>
 

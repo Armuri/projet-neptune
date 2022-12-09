@@ -8,6 +8,9 @@
 <body>
     <link rel="stylesheet" href="/css/chambres.css">
     <h1> Chambre Double Confort</h1>
-    <img src="/Images/chambres/chambre-double-confort.jpg" alt="chambre-double-confort">
+    <img src="./Images/chambres/chambre-double-confort.jpg" alt="chambre-double-confort">
+    <h2>Description de la chambre : </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis quis quam nisi libero placeat mollitia id beatae, maxime, consequatur, incidunt similique pariatur ea autem nam. Porro laudantium numquam quasi.</p>
+</body>
 </body>
 </html>
