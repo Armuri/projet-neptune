@@ -14,11 +14,11 @@
         <div class="admin-block">
             <form action="" method="POST" id="admin_auth" enctype="multipart/form-data">
                 <div>
-                <input type="text" name="identifiant" placeholder="Identifiant" value="admin" readonly>
+                <input type="text" name="id-admin" placeholder="id-admin" value="id-admin" readonly>
                 </div>
                 <br>
             <div>
-            <input type="file" accept="passwd.txt" name="Permission key">
+            <input type="file" accept="passwd.txt" name="perm-key">
             </div>
             </form>
             <br>
