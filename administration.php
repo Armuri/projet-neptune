@@ -13,13 +13,18 @@
         <h1>Accés administration</h1>
         <div class="admin-block">
             <form action="" method="POST" id="admin_auth" enctype="multipart/form-data">
-                <input type="login" name="identifiant" placeholder="Identifiant" value="admin" readonly>
+                <div>
+                <input type="text" name="identifiant" placeholder="Identifiant" value="admin" readonly>
+                </div>
                 <br>
-                <br>
+            <div>
             <input type="file" accept="passwd.txt" name="Permission key">
+            </div>
             </form>
             <br>
+            <div>
             <button type="submit" form="admin_auth">Envoyer</button>
+            </div>
         </div>
     </div>
 </body>
