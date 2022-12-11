@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>administration</title>
+    <link rel="stylesheet" href="./css/connexion-admin.css">
 </head>
 <body>
     <?php include('./nav-bar.php'); ?>
-    <link rel="stylesheet" href="./css/connexion-administration.css">
     <div class="pre-admin-block">
         <h1>Accés administration</h1>
         <div class="admin-block">
             <form action="" method="POST" id="admin_auth" enctype="multipart/form-data">
-                <div>
-                <input type="text" name="id-admin" placeholder="id-admin" value="id-admin" readonly>
-                </div>
+                
+                <input type="text" name="id-admin" placeholder="nom utilisateur admin" readonly>
+            
                 <br>
             <div>
             <input type="file" accept="passwd.txt" name="perm-key">

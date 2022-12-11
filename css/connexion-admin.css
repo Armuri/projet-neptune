@@ -1,15 +1,13 @@
 .pre-admin-block{
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
-    border:solid 2px black;
     align-items: center;
 }
 .admin-block{
-    padding: 50px;
-    border:solid 2px blue;
+    padding: 16px;
+    border:solid 2px black;
     border-radius: 5px;
     width: 500px;
     justify-content: center;
-    
 }
