@@ -17,15 +17,15 @@
     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Faire une recherche.." title="Type in a category">
     <ul id="myMenu">
 
-      <li><a href="./chambres/chambre-simple-deluxe.php">Chambre Simple Deluxe</a></li>
-      <li><a href="./chambres/chambre-simple-economique.php">Chambre Simple Economique</a></li>
-      <li><a href="./chambres/chambre-double-deluxe.php">Chambre Double Deluxe</a></li>
-      <li><a href="./chambres/chambre-double-economique.php">Chambre Double Economique</a></li>
-      <li><a href="./chambres/chambre-double-classique.php">Chambre Double Classique</a></li>
-      <li><a href="./chambres/chambre-double-confort.php">Chambre Double Confort</a></li>
-      <li><a href="./chambres/chambre-lits-jumeaux-classique.php">Chambre Lits Jumeaux Classique</a></li>
-      <li><a href="./chambres/chambre-triple-economique.php">Chambre Triple Economique</a></li>
-      <li><a href="./chambres/chambre-triple-classique.php">Chambre Triple Classique</a></li>
+      <li><a href="./chambres/chambre-simple-deluxe.php"><img src="./chambres/chambres/chambre-simple-deluxe.jpg" alt="chambre-simple-classique" height="50" width="100"> Chambre Simple Deluxe</a></li>
+      <li><a href="./chambres/chambre-simple-economique.php"><img src="./chambres/chambres/chambre-simple-economique.jpg" alt="chambre-simple-economique" height="50" width="100"> Chambre Simple Economique</a></li>
+      <li><a href="./chambres/chambre-double-deluxe.php"><img src="./chambres/chambres/chambre-double-deluxe.jpg" alt="chambre-double-deluxe" height="50" width="100"> Chambre Double Deluxe</a></li>
+      <li><a href="./chambres/chambre-double-economique.php"><img src="./chambres/chambres/chambre-double-economique.jpg" alt="chambre-double-economique" height="50" width="100"> Chambre Double Economique</a></li>
+      <li><a href="./chambres/chambre-double-classique.php"><img src="./chambres/chambres/chambre-double-classique.jpg" alt="chambre-double-classique" height="50" width="100"> Chambre Double Classique</a></li>
+      <li><a href="./chambres/chambre-double-confort.php"><img src="./chambres/chambres/chambre-double-confort.jpg" alt="chambre-double-confort" height="50" width="100"> Chambre Double Confort</a></li>
+      <li><a href="./chambres/chambre-lits-jumeaux-classique.php"><img src="./chambres/chambres/chambre-lits-jumeaux-classique.jpg" alt="chambre-lits-jumeaux-classique" height="50" width="100"> Chambre Lits Jumeaux Classique</a></li>
+      <li><a href="./chambres/chambre-triple-economique.php"><img src="./chambres/chambres/chambre-triple-economique.jpg" alt="chambre-triple-economique" height="50" width="100"> Chambre Triple Economique</a></li>
+      <li><a href="./chambres/chambre-triple-classique.php"><img src="./chambres/chambres/chambre-triple-classique.jpg" alt="chambre-triple-classique" height="50" width="100"> Chambre Triple Classique</a></li>
       
     </ul>
   </div>

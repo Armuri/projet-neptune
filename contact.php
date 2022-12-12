@@ -7,7 +7,6 @@
 </head>
 <body>
     <?php include('./nav-bar.php'); ?>
-    <img src="./images-chambres/chambre-double-classique.jpg" height="300" width="400">
     <link rel="stylesheet" href="./css/index.css">
 </body>
 

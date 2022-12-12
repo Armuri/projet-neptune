@@ -10,12 +10,12 @@ include "./ba/connexion.php";
    <body>
     <link rel="stylesheet" href="./css/nav.css">
     <nav>
-    <ul>
+    <ul class="ulnavbar">
         <h1> <?php ?> </h1>
-        <a href="accueil.php"><li>Accueil</li></a>
-        <a href="chambre.php"><li>Chambre</li></a>
-        <a href="contact.php"><li>Contact</li></a>
-        <a href="connexion.php"><li>Connexion/Inscription</li></a>
+        <a href="accueil.php"><li class="linavbar">Accueil</li></a>
+        <a href="presentation-chambres.php"><li class="linavbar">Chambre</li></a>
+        <a href="contact.php"><li class="linavbar">Contact</li></a>
+        <a href="connexion.php"><li class="linavbar">Connexion/Inscription</li></a>
     </ul>
         
     </nav>
