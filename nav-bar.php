@@ -1,5 +1,11 @@
 <?php
 
+include "./ba/connexion.php";
+if(!isset ($_SESSION["username"])){
+    $_SESSION["user"] = "nouvel, utilisateur";
+    $_SESSION = $_SESSION["user"];
+}
+
 ?>
 
 <html>
@@ -9,7 +15,7 @@
     <link rel="stylesheet" href="./css/nav.css">
     <nav>
     <ul class="ulnavbar">
-        <h1> <?php ?> </h1>
+        <!-- <h1> Bonjour, <b><?php echo htmlspecialchars($_SESSION["users"]); ?></b>.</h1> -->
         <a href="accueil.php"><li class="linavbar">Accueil</li></a>
         <a href="presentation-chambres.php"><li class="linavbar">Chambre</li></a>
         <a href="contact.php"><li class="linavbar">Contact</li></a>
