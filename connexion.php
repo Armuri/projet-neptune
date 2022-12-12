@@ -42,13 +42,10 @@ require "./ba/connexion.php";
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form method="POST" class="modal-content animate" action="accueil.php" >
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+  <form method="POST" class="modal-content animate" action="presentation-chambres.php" >
 
     <div class="container">
-      <label for="uname"><b>Nom d'utilisateur</b></label>
+      <label for="name"><b>Nom d'utilisateur</b></label>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
 
       <label for="psw"><b>Mot de passe</b></label>

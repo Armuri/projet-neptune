@@ -1,7 +1,5 @@
 <?php
 
-include "./ba/connexion.php";
-
 ?>
 
 <html>

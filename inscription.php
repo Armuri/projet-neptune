@@ -14,17 +14,17 @@ require "./ba/inscription.php";
     <?php include('./nav-bar.php'); ?>
 <body>
     <link rel="stylesheet" href="./css/inscription.css">
-          <form method="POST" action="connexion.php">
+          <form method="POST" action="">
             <div class="container">
               <h1>S'inscrire</h1>
               <p>Remplissez le formulaire afin de créer votre compte.</p>
               <hr>
               
               <label for="nom"><b>Nom</b></label>
-              <input type="text" placeholder="Votre nom*" name="nom" required>
+              <input type="text" placeholder="Nom*" name="nom" required>
 
               <label for="prenom"><b>Prénom</b></label>
-              <input type="text" placeholder="Votre prénom*" name="prenom" required>
+              <input type="text" placeholder="Prénom*" name="prenom" required>
               
               <label for="email"><b>Email</b></label>
               <input type="email" placeholder="xxx@xxx.xxx*" name="email" required>
