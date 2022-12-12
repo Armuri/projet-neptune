@@ -3,13 +3,13 @@
 require "link-mysql.php";
 
 if (isset ($_POST["id-admin"])){
-    $id-admin = $_POST["id-admin"];
+    $id_admin = $_POST["id-admin"];
 }else {
-    $id-admin = "";
+    $id_admin = "";
 }
 
 if (isset ($_POST["perm-key"])){
-    $perm-key = $_POST["perm-key"];
+    $perm_key = $_POST["perm-key"];
 }else {
-    $perm-key = "";
+    $perm_key = "";
 }
