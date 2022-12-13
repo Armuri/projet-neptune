@@ -17,6 +17,7 @@
         <a href="contact.php"><li class="linavbar">Contact</li></a>
         <a href="connexion.php"><li class="linavbar">Connexion/Inscription</li></a>
         <a href="session.php"><li class="linavbar">Mon compte</li></a>
+        <a href="./reservation/3-reservation.php"><li class="linavbar"></li></a>
     </ul>
         
     </nav>
