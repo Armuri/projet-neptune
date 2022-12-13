@@ -7,7 +7,7 @@
     <title>Chambre-double-classique</title>
 </head>
 <body>
-    <img src="..s/chambres/chambres/chambre-double-classique.jpg">
+    <img src="./chambres/chambres/chambre-double-classique.jpg">
     <form action="" method="POST" id="img-chambre" enctype="multipart/form-data">
     <input type="file" accept="image/*" name="img-chambre">
     <button type="submit" form="img-chambre">enregistrer</button>
