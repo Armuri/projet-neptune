@@ -2,41 +2,46 @@
 
 require "link-mysql.php";
 
-function PostReservation($id_reservation){
-    if ($_POST[$id_reservation]){
-        $id_reservation = $_POST[$id_reservation];
+
+    if (isset ($_POST["id"])){
+        $id_reservation = $_POST["id"];
     }
     else{
         $id_reservation = "";
     }
-}
 
-function PostNomChambre($nom_chambre){
-    if ($_POST[$nom_chambre]){
-        $nom_chambre = $_POST[$nom_chambre];
+    if (isset ($_POST["nom de chambre"])){
+        $nom_chambre = $_POST["nom de chambre"];
     }
     else{
         $nom_chambre = "";
     }
-}
 
-function PostDate($date){
-    if ($_POST[$date]){
-        $date = $_POST[$date];
+    if (isset ($_POST["debut"])){
+        $debut = $_POST["debut"];
     }
     else{
-        $date = "";
+        $debut = "";
     }
-}
 
-function PostDuree($duree){
-    if ($_POST[$duree]){
-        $duree = $_POST[$duree];
+    if (isset ($_POST["fin"])){
+        $fin= $_POST["fin"];
     }
     else{
-        $duree = "";
+        $fin = "";
     }
-}
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $insert = $dbh->prepare('INSERT * FROM reservation WHERE and id_reservation=:id and nom_chambre=:nom de chambre and debut=:debut and fin=:fin');
+        $insert->execute(array('id' => $id_reservation, 'nom de chambre' => $nom_chambre, 'debut' => $debut, 'duree' => $fin));
+        $result = $insert->fetch();
+
+        if(!$result){
+            header("location ./");
+        }
+        header("location ./");
+    }   
+
 
 
 ?>
