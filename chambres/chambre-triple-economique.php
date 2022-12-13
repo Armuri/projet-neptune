@@ -11,6 +11,6 @@
     <img src="./chambres/chambre-triple-classique.jpg" alt="chambre-triple-economique" height="300" width="650">
     <h2>Description de la chambre : </h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis quis quam nisi libero placeat mollitia id beatae, maxime, consequatur, incidunt similique pariatur ea autem nam. Porro laudantium numquam quasi.</p>
-</body>
+    </body>
 </body>
 </html>
