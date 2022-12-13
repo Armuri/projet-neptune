@@ -16,9 +16,6 @@
     <?php include "admin-nav.php"; ?>
     <h1>Page Administration</h1>
     <button type="button" form="ajouter">Ajouter une chambre</button>
-    <button type="button" form="modifier">Modifier une page</button>
-    <button type="button" form="supprimer">Supprimer une page</button>
-    
     <div class="border-section">
         <div class="section_chambres">
             <div class="chambre">
@@ -27,7 +24,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-double-classique.jpg" alt="chambre-double-classique" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
 
             <div class="chambre">
@@ -36,7 +34,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-double-confort.jpg" alt="chambre-double-confort" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
 
             <div class="chambre">
@@ -45,7 +44,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-double-deluxe.jpg" alt="chambre-double-deluxe" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
         </div>
 
@@ -56,7 +56,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-double-economique.jpg" alt="chambre-double-economique" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
 
             <div class="chambre">
@@ -65,7 +66,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-lits-jumeaux-classique.jpg" alt="chambre-double-confort" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
 
             <div class="chambre">
@@ -74,7 +76,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-simple-deluxe.jpg" alt="chambre-simple-deluxe" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
         </div>
 
@@ -85,7 +88,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-simple-economique.jpg" alt="chambre-simple-economique" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
 
             <div class="chambre">
@@ -94,7 +98,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-triple-classique.jpg" alt="chambre-triple-classique" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
 
             <div class="chambre">
@@ -103,7 +108,8 @@
                 </div>
                 <img src="./chambres/chambres/chambre-triple-economique.jpg" alt="chambre-triple-economique" height="180" width="280">
                 <br>
-                <input type="checkbox" name="checkbox">
+                <a href=""><button type="button" form="modifier">Modifier une page</button><a>
+                <button type="button" form="supprimer">Supprimer une page</button>
             </div>
         </div>
     </div>
