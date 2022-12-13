@@ -46,27 +46,18 @@ class="close" title="Close Modal">&times;</span>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
-        <label>Veuillez choisir une chambre :
-  <select name="chambres" multiple size="3">
-    <optgroup label="Chambres Simples">
-      <option value="Chambre Simple Deluxe">Chambre Simple Deluxe</option>
-      <option value="Chambre Simple Economique">Chambre Simple Economique</option>
-    </optgroup>
-    <optgroup label="Chambres Doubles">
-      <option value="Chambre Double Deluxe">Chambre Double Deluxe</option>
-      <option value="Chambre Double Economique">Chambre Double Economique</option>
-      <option value="Chambre Double Classique">Chambre Double Classique</option>
-      <option value="Chambre Double Confort">Chambre Double Confort</option>
-      <!-- <option value="hamster" disabled>Hamster</option> -->
-    </optgroup>
-    <optgroup label="Chambres Triples">
-      <option value="Chambre Triple Economique">Chambre Triple Economique</option>
-      <option value="Chambre Triple Classique">Chambre Triple Classique</option>
-    </optgroup>
-    <optgroup label="Chambre spéciale">
-    <option value="Chambre Lits Jumeaux Classique"> Chambre Lits Jumeaux Classique</option>
-    </optgroup>
-  </select>
+      <label for="name"><b>Sélectionnez la chambre :</b>  </label>
+      <select id="chambres" required>
+            <option value="1">Chambre Simple Deluxe</option>
+            <option value="2">Chambre Simple Economique</option>
+            <option value="3">Chambre Double Deluxe</option>
+            <option value="4">Chambre Double Economique</option>
+            <option value="5">Chambre Double Classique</option>
+            <option value="6">Chambre Double Confort</option>
+            <option value="7">Chambre Triple Economique</option>
+            <option value="8">Chambre Triple Classique</option>
+            <option value="8">Chambre Lits Jumeaux Classique</option>
+        </select>
 </label>
        <br><br>
       <label for="psw"><b> Début de la réservation </b></label>
