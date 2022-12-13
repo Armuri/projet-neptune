@@ -21,7 +21,6 @@ h1 {
     background-color: rgb(26, 124, 204);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 .texte-description{
     padding: 2%;

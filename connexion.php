@@ -45,8 +45,6 @@ class="close" title="Close Modal">&times;</span>
   <form method="POST" class="modal-content animate" action="">
 
     <div class="container">
-      <label for="name"><b>Prénom</b></label>
-      <input type="text" placeholder="Entrer votre prénom" name="prenom" required>
 
       <label for="name"><b>Nom d'utilisateur</b></label>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>

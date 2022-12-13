@@ -2,13 +2,6 @@
 
 require "link-mysql.php";
 
-if (isset ($_POST["prenom"])){
-    $prenom = $_POST["prenom"];
-}else {
-    $prenom = "";
-}
-
-
 if (isset ($_POST["login"])){
     $login = $_POST["login"];
 }else {
@@ -23,19 +16,19 @@ if (isset ($_POST["password"])){
 
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $select = $dbh->prepare('SELECT * FROM users WHERE nom_utilisateur=:login and mot_de_passe=:password');
+    $select = $dbh->prepare('SELECT * FROM users WHERE and nom_utilisateur=:login and mot_de_passe=:password');
     $select->execute(array('login' => $login, 'password' => $password));
-    $result = $select->fetchAll();
+    $result = $select->fetch();
 
     if(!$result) {
-        echo '<h1>Mauvaise coordonnées,<a href="./connexion.php">réesayer</a>.</p>';
+        header("location ./accueil.php");
     }
     session_start();
-
     $_SESSION["loggedin"] = true;
-    $_SESSION["username"] = $prenom;
+    $_SESSION["username"] = $login;
 
-    header("location: bienvenue.php");
+    header("location: ./session.php");
+    exit;
 }
 
 

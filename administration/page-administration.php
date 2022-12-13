@@ -1,3 +1,8 @@
+<?php 
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Administration</title>
-    <link rel="stylesheet" href="./css/page-admin.css">
+    <link rel="stylesheet" href="./page-admin.css">
 </head>
 <body>
+    <?php include "admin-nav.php"; ?>
     <h1>Page Administration</h1>
     <button type="button" form="ajouter">Ajouter une chambre</button>
     <div class="border-section">
