@@ -22,11 +22,11 @@
     <section id="section-1">
 
             <div class="container">
+                <h1> Chambre Lits Jumeaux Classiques</h1>
                <div class="left">
                 <img src="./chambres/chambre-lits-jumeaux-classique.jpg" alt="chambre-lits-jumeaux-classique" height="300" width="650">
                </div> 
                <div class="midle">
-                <h1> Chambre Lits Jumeaux Classiques</h1>
                 <h3>Description de la chambre : </h3>
                 <p>Les chambres Single (18 m2) sont dotées d'un lit simple et d'une salle de bains en marbre à baignoire. Une boisson de bienvenue vous est également offerte.</p>
                </div>
@@ -44,20 +44,22 @@ class="close" title="Close Modal">&times;</span>
 
       <label for="name"><b>Nom d'utilisateur</b></label>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
+      <label for="name"><b>E-mail :</b></label>
+      <input type="email" placeholder="Entrer votre e-mail" name="email" required>
         <label>Veuillez choisir une chambre :
   <select name="chambres" multiple size="3">
-    <optgroup label="Chambres Simple">
+    <optgroup label="Chambres Simples">
       <option value="Chambre Simple Deluxe">Chambre Simple Deluxe</option>
       <option value="Chambre Simple Economique">Chambre Simple Economique</option>
     </optgroup>
-    <optgroup label="Chambres Double">
+    <optgroup label="Chambres Doubles">
       <option value="Chambre Double Deluxe">Chambre Double Deluxe</option>
       <option value="Chambre Double Economique">Chambre Double Economique</option>
       <option value="Chambre Double Classique">Chambre Double Classique</option>
       <option value="Chambre Double Confort">Chambre Double Confort</option>
       <!-- <option value="hamster" disabled>Hamster</option> -->
     </optgroup>
-    <optgroup label="Chambre Triple">
+    <optgroup label="Chambres Triples">
       <option value="Chambre Triple Economique">Chambre Triple Economique</option>
       <option value="Chambre Triple Classique">Chambre Triple Classique</option>
     </optgroup>
