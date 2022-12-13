@@ -5,16 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chambres - Hotel Neptune</title>
 </head>
-<<<<<<< Updated upstream
-<body>
-    <link rel="stylesheet" href="./chambres/chambre-triple-economique.jpg">
-    <h1> Chambre Triple Economique</h1>
-    <img src="./chambres/chambre-triple-classique.jpg" alt="chambre-triple-economique" height="300" width="650">
-    <h2>Description de la chambre : </h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis quis quam nisi libero placeat mollitia id beatae, maxime, consequatur, incidunt similique pariatur ea autem nam. Porro laudantium numquam quasi.</p>
-    </body>
-=======
-
     <body>
             <link rel="stylesheet" href="./chambres.css">
     
@@ -35,9 +25,5 @@
             </div>
     </section>
 
-
-
-</body>
->>>>>>> Stashed changes
 </body>
 </html>
