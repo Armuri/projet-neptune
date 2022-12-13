@@ -6,7 +6,7 @@
     <title>Chambres - Hotel Neptune</title>
 </head>
 <body>
-    <link rel="stylesheet" href="./chambres/chambre-simple-economique.jpg">
+    <link rel="stylesheet" href="./chambres.css">
     <h1> Chambre Simple Economique</h1>
     <img src="./chambres/chambre-simple-economique.jpg" alt="chambre-simple-economique" height="300" width="650">
     <h2>Description de la chambre : </h2>

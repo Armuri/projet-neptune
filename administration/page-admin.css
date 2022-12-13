@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+.border-section{
+    border: solid 2px black;
+}
+.section_chambres{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;   
+}
