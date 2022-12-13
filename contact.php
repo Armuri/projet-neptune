@@ -9,5 +9,4 @@
     <?php include('./nav-bar.php'); ?>
     <link rel="stylesheet" href="./css/index.css">
 </body>
-
 </html>
