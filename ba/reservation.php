@@ -39,7 +39,7 @@ require "link-mysql.php";
     }
 
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $insert = $dbh->prepare('INSERT * FROM reservation WHERE and id_reservation=:login and nom_chambre=:chambres and debut=:date and fin=:date');
+        $insert = $dbh->prepare("INSERT INTO reservation (login, email, chambres, date, date) VALUES ('$id_reservation', '$mail','$nom_chambre','$debut,'$fin')");
         $insert->execute(array('login' => $id_reservation, 'chambres' => $nom_chambre, 'date' => $debut, 'date' => $fin));
         $result = $insert->fetch();
 
