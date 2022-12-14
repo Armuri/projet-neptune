@@ -1,14 +1,14 @@
 <?php
 include "./page_reservation.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Chambres - Hotel Neptune</title>
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chambres - Hotel Neptune</title>
+</head>
         <script>
         // Get the modal
         var modal = document.getElementById('id01');
@@ -20,15 +20,13 @@ include "./page_reservation.php";
         }
         }
         </script> 
-    <body>    
-        <link rel="stylesheet" href="./chambres-reservation.css">
+    <body>
+            <link rel="stylesheet" href="./chambres-reservation.css">
+    
     <section id="section-1">
 
             <div class="container">
-                <div class="header_titre">
-                  <h1>Chambre Simple Deluxe</h1>
-                  <p>-25% sur la prochaine réservation pour la création d'un compte</p>
-                </div>
+                <h1> Chambre Simple Deluxe</h1>
                <div class="left">
                 <img src="./chambres/chambre-simple-deluxe.jpg" alt="chambre-simple-deluxe" height="300" width="650">
                </div> 
@@ -44,26 +42,15 @@ include "./page_reservation.php";
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>
 
-  <form method="POST" class="modal-content animate" action="page_reservation.php">
+  <form method="POST" class="modal-content animate" action="">
 
     <div class="container">
-
       <label for="name"><b>Nom d'utilisateur</b></label>
-      <input type="login" placeholder="Entrer votre nom d'utilisateur" name="login" required>
+      <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
-      <label for="name"><b>Sélectionnez la chambre :</b>  </label>
-        <select id="chambres" name="chambres" required>
-            <option value="1">Chambre Simple Deluxe</option>
-            <option value="2">Chambre Simple Economique</option>
-            <option value="3">Chambre Double Deluxe</option>
-            <option value="4">Chambre Double Economique</option>
-            <option value="5">Chambre Double Classique</option>
-            <option value="6">Chambre Double Confort</option>
-            <option value="7">Chambre Triple Economique</option>
-            <option value="8">Chambre Triple Classique</option>
-            <option value="8">Chambre Lits Jumeaux Classique</option>
-        </select>
+      <label for="name"><b>Ecrivez le nom de la chambre : ('Chambre Simple Deluxe') </b>  </label>
+      <input type="text" name="chambres" required>
        <br><br>
       <label for="psw"><b> Début de la réservation </b></label>
       <input type="date" name="date_debut" required>

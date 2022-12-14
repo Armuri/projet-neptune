@@ -30,15 +30,15 @@ require "link-mysql.php";
         $nom_chambre = "";
     }
 
-    if (isset ($_POST["date"])){
-        $debut = $_POST["date"];
+    if (isset ($_POST["date1"])){
+        $debut = $_POST["date1"];
     }
     else{
         $debut = "";
     }
 
-    if (isset ($_POST["date"])){
-        $fin= $_POST["date"];
+    if (isset ($_POST["date2"])){
+        $fin= $_POST["date2"];
     }
     else{
         $fin = "";
