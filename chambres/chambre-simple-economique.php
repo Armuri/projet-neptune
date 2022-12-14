@@ -41,9 +41,6 @@ class="close" title="Close Modal">&times;</span>
   <form method="POST" class="modal-content animate" action="">
 
     <div class="container">
-    <?php
-    require "./projet-neptune/ba/reservation.php"
-    ?>
       <label for="name"><b>Nom d'utilisateur</b></label>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
