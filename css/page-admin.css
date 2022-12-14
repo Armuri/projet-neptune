@@ -1,0 +1,5 @@
+.section_chambres{
+    display: flex;
+    justify-content: row;
+    border: solid 2px black;
+}
