@@ -54,11 +54,6 @@ body {
     background-repeat: no-repeat;
     }
     
-    form div > textarea {
-    height: 195px;
-    padding: 15px 0px 0px 10px;
-    }
-    
     form div > input::placeholder, form div > textarea::placeholder {
     color: white;
     }
