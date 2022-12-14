@@ -1,3 +1,7 @@
+<?php
+include "./page_reservation.php";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -41,21 +45,18 @@ class="close" title="Close Modal">&times;</span>
   <form method="POST" class="modal-content animate" action="">
 
     <div class="container">
-    <?php
-    require "./projet-neptune/ba/reservation.php"
-    ?>
       <label for="name"><b>Nom d'utilisateur</b></label>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
-      <label for="name"><b>La chambre :</b>  </label>
-      <input type="text" name="chambres" placeholder="Chambre Simple Economique" readonly>      
-      <br><br>
+      <label for="name"><b>Ecrivez le nom de la chambre : ('Chambre Simple Economique') </b>  </label>
+      <input type="text" name="chambres" required>
+       <br><br>
       <label for="psw"><b> Début de la réservation </b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date_debut" required>
       <br> <br>
       <label for="psw"><b> Fin de la réservation</b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date_fin" required>
         <br><br>
       <button type="submit">Réserver</button>
 

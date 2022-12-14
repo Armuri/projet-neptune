@@ -1,3 +1,7 @@
+<?php
+include "./page_reservation.php";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -46,25 +50,14 @@ class="close" title="Close Modal">&times;</span>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
-      <label for="name"><b>Sélectionnez la chambre :</b>  </label>
-      <select id="chambres" required>
-            <option value="1">Chambre Simple Deluxe</option>
-            <option value="2">Chambre Simple Economique</option>
-            <option value="3">Chambre Double Deluxe</option>
-            <option value="4">Chambre Double Economique</option>
-            <option value="5">Chambre Double Classique</option>
-            <option value="6">Chambre Double Confort</option>
-            <option value="7">Chambre Triple Economique</option>
-            <option value="8">Chambre Triple Classique</option>
-            <option value="8">Chambre Lits Jumeaux Classique</option>
-        </select>
-</label>
+      <label for="name"><b>Ecrivez le nom de la chambre : ('Chambre Double Deluxe') </b>  </label>
+      <input type="text"name="chambres" required>
        <br><br>
       <label for="psw"><b> Début de la réservation </b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date_debut" required>
       <br> <br>
       <label for="psw"><b> Fin de la réservation</b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date_fin" required>
         <br><br>
       <button type="submit">Réserver</button>
 

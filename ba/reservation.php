@@ -24,15 +24,15 @@ require "link-mysql.php";
         $nom_chambre = "";
     }
 
-    if (isset ($_POST["date"])){
-        $debut = $_POST["date"];
+    if (isset ($_POST["date1"])){
+        $debut = $_POST["date1"];
     }
     else{
         $debut = "";
     }
 
-    if (isset ($_POST["date"])){
-        $fin= $_POST["date"];
+    if (isset ($_POST["date2"])){
+        $fin= $_POST["date2"];
     }
     else{
         $fin = "";
@@ -40,7 +40,7 @@ require "link-mysql.php";
 
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $insert = $dbh->prepare("INSERT INTO reservation (login, email, chambres, date, date) VALUES ('$id_reservation', '$mail','$nom_chambre','$debut,'$fin')");
-        $insert->execute(array('login' => $id_reservation, 'chambres' => $nom_chambre, 'date' => $debut, 'date' => $fin));
+        $insert->execute(array('login' => $id_reservation, 'chambres' => $nom_chambre, 'date1' => $debut, 'date2' => $fin));
         $result = $insert->fetch();
 
         if(!$result){
