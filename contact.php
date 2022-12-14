@@ -14,7 +14,7 @@ include "./ba/formulaire.php";
 <body>
     <?php include('./nav-bar.php'); ?>
     <div class="contactez-nous">
-    <h1>Nos réseaux sociaux :</h1>
+    
 <h2>Contactez-nous</h2>
 <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
 <form action="" method="POST">
@@ -38,6 +38,12 @@ include "./ba/formulaire.php";
 <button type="submit">Envoyer mon message</button>
 </div>
 </form>
+</div>
+<h1>Nos réseaux sociaux :</h1>
+<div class="icon">
+    <a href=""><img src="./Images/icons8-facebook-120.png" alt="Facebook" height="90" width="100"></a>
+    <a href=""><img src="./Images/icons8-instagram-120.png" alt="Instagram" height="90" width="100"></a>
+    <a href=""><img src="./Images/icons8-twitter-120.png" alt="Twitter" height="90" width="100"></a>
 </div>
 <link rel="stylesheet" href="./css/contact.css">
 </body>
