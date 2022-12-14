@@ -10,6 +10,13 @@ require "link-mysql.php";
         $id_reservation = "";
     }
 
+    if (isset ($_POST["email"])){
+        $mail = $_POST["email"];
+    }
+    else{
+        $mail = "";
+    }
+
     if (isset ($_POST["nom de chambre"])){
         $nom_chambre = $_POST["nom de chambre"];
     }
