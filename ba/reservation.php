@@ -37,11 +37,8 @@ require "link-mysql.php";
         $result = $insert->fetch();
 
         if(!$result){
-            header("location ./");
+            header("location ./reservation_erreur.php");
         }
-        header("location ./");
+        header("location ./reservation_succés.php");
     }   
-
-
-
 ?>
