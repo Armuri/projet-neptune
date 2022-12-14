@@ -1,3 +1,6 @@
+<?php
+include "./page_reservation.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -22,7 +25,10 @@
     <section id="section-1">
 
             <div class="container">
-                    <h1>Chambre Simple Deluxe</h1>
+                <div class="header_titre">
+                  <h1>Chambre Simple Deluxe</h1>
+                  <p>-25% sur la prochaine réservation pour la création d'un compte</p>
+                </div>
                <div class="left">
                 <img src="./chambres/chambre-simple-deluxe.jpg" alt="chambre-simple-deluxe" height="300" width="650">
                </div> 
@@ -38,16 +44,16 @@
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>
 
-  <form method="POST" class="modal-content animate" action="">
+  <form method="POST" class="modal-content animate" action="page_reservation.php">
 
     <div class="container">
 
       <label for="name"><b>Nom d'utilisateur</b></label>
-      <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
+      <input type="login" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
       <label for="name"><b>Sélectionnez la chambre :</b>  </label>
-        <select id="chambres" required>
+        <select id="chambres" name="chambres" required>
             <option value="1">Chambre Simple Deluxe</option>
             <option value="2">Chambre Simple Economique</option>
             <option value="3">Chambre Double Deluxe</option>
@@ -60,10 +66,10 @@ class="close" title="Close Modal">&times;</span>
         </select>
        <br><br>
       <label for="psw"><b> Début de la réservation </b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date_debut" required>
       <br> <br>
       <label for="psw"><b> Fin de la réservation</b></label>
-      <input type="date" name="date" required>
+      <input type="date" name="date_fin" required>
         <br><br>
       <button type="submit">Réserver</button>
 

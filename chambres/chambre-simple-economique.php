@@ -47,7 +47,7 @@ class="close" title="Close Modal">&times;</span>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
       <label for="name"><b>Sélectionnez la chambre :</b>  </label>
-      <select id="chambres" required>
+      <select id="chambres" name ="chambres" required>
             <option value="1">Chambre Simple Deluxe</option>
             <option value="2">Chambre Simple Economique</option>
             <option value="3">Chambre Double Deluxe</option>
