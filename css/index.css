@@ -21,17 +21,17 @@ h1 {
     background-color: rgb(26, 124, 204);
     display: flex;
     flex-direction: row;
+    gap:10%;
 }
 .texte-description{
     padding: 2%;
     border: solid 2px black;
     border-radius: 10px;
+    padding-right: 15px;
     background-color: rgb(64, 182, 255);
 }
 
-.image-plage {
-    align-self: center;
-}
+
 
 .hotel-description{
     padding: 1%;
@@ -58,6 +58,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 50px;
+    gap:10%;
 }
 .texte-tourisme{
     padding: 2%;
@@ -66,8 +67,12 @@ h1 {
     background-color: rgb(64, 182, 255);
 }
 
-.img-middle{
-    position: absolute;
-    right: 320px; 
+.images-tourismes{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
+
+.img-middle{
+    margin-top: 100px;
+}
