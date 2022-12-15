@@ -29,8 +29,13 @@ include "./page_reservation.php";
                 <img src="./chambres/chambre-double-classique.jpg" alt="chambre-double-classique" height="300" width="650">
                </div> 
                <div class="midle">
-                <h3>Description de la chambre : </h3>
-                <p>Les chambres Single (18 m2) sont dotées d'un lit simple et d'une salle de bains en marbre à baignoire. Une boisson de bienvenue vous est également offerte.</p>
+               <h3>Avantages de la chambre : </h3>
+                <ul>
+                  <li>Douche et Baignoire</li>
+                  <li>Coffre fort</li>
+                  <li>Wifi gratuite</li>
+                  <li>Télévision Full HD</li>
+                  </ul>
                </div>
             </div>
     </section>
@@ -51,13 +56,18 @@ class="close" title="Close Modal">&times;</span>
       <label for="name"><b>Ecrivez le nom de la chambre : ('Chambre Double Classique') </b>  </label>
       <input type="text"name="chambres" required>
        <br><br>
-      <label for="psw"><b> Début de la réservation </b></label>
+      <label for="psw"><b> Début de la réservation : </b></label>
       <input type="date" name="date_debut" required>
       <br> <br>
-      <label for="psw"><b> Fin de la réservation</b></label>
+      <label for="psw"><b> Fin de la réservation : </b></label>
       <input type="date" name="date_fin" required>
         <br><br>
-      <button type="submit">Réserver</button>
+      <label for="psw"> <b>Service déjeuner le matin </b></label>
+      <input type="checkbox" name="dejeuner">
+      <br><br>
+      <label for="psw"><b>Prix d'une nuit : 150e</b>  </label>
+      <br><br>
+      <button type="submit" action="./page_paiement.php">Réserver</button>
 
     <div class="container" style="background-color:#f1f1f1">
     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
