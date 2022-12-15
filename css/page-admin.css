@@ -1,5 +1,7 @@
 .section_chambres{
     display: flex;
-    justify-content: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
     border: solid 2px black;
+    
 }
