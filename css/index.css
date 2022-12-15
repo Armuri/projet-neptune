@@ -3,7 +3,11 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: rgb(26, 124, 204)
+    background-image: url(../Images/carnon_arrière_plan.jpg);
+    margin:0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 h1 {
     text-align: center;
@@ -11,14 +15,13 @@ h1 {
 }
 
 .adresse{
-    border:solid 1px black;
     text-align: center;
+    border: solid 2px black;
     background-color: rgb(64, 182, 255);
 }
 .description{
     padding: 1%;
-    border:solid 1px black;
-    background-color: rgb(26, 124, 204);
+    background-color: transparents;
     display: flex;
     flex-direction: row;
     gap:10%;
@@ -35,8 +38,7 @@ h1 {
 
 .hotel-description{
     padding: 1%;
-    border:solid 1px black;
-    background-color: rgb(26, 124, 204);
+    background-color: transparent;
     display: flex;
     flex-direction: row-reverse;
     justify-content:space-around;
@@ -52,8 +54,7 @@ h1 {
 }
 
 .tourisme-description{
-    border:solid 1px black;
-    background-color: rgb(26, 124, 204);
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -72,3 +73,8 @@ h1 {
     grid-template-columns: 1fr 2fr;
 }
 
+.img-middle{
+    position: relative;
+    top: 100px;
+    margin-left: 30px;
+}
