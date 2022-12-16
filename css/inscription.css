@@ -41,15 +41,15 @@ button {
 }
 
 h1{
-  color: white;
+  color: black;
 }
 label{
-  color: white;
+  color: black;
 }
 
 p {
   text-align: center;
-  color: white;
+  color: black;
   
 }
 
@@ -140,4 +140,13 @@ hr {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
+}
+
+body{
+  background-image: url(/Images/carnon_arriere_plan2.png);
+  margin:0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: 1500px 1000px;
 }
