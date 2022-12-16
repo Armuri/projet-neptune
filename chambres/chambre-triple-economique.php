@@ -64,7 +64,7 @@ class="close" title="Close Modal">&times;</span>
       <label for="psw"><b> Fin de la réservation : </b></label>
       <input type="date" name="date_fin" required>
         <br><br>
-      <label for="psw"> <b>Service déjeuner le matin </b></label>
+      <label for="psw"> <b>Service déjeuner le matin:20e</b></label>
       <input type="checkbox" name="dejeuner">
       <br><br>
       <label for="psw"><b>Prix d'une nuit : 190e</b>  </label>
