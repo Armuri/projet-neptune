@@ -20,7 +20,7 @@ include "./ba/formulaire.php";
 <form action="" method="POST">
 <div>
 <label for="nom">Votre nom</label>
-<input type="text" id="nom" name="nom" placeholder="Votre" required>
+<input type="text" id="nom" name="nom" placeholder="Votre nom" required>
 </div>
 <div>
 <label for="email">Votre e-mail</label>
