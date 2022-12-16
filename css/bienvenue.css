@@ -1,15 +1,16 @@
 html{
-    background-size:cover;
-    background-image: url(../Images/carnon_arriere_plan2.jpg) ;
-    background-size: 2000px 1000px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
-    margin: 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
 }
+
+body{
+        background-image: url(../Images/carnon_arriere_plan2.png);
+        margin:0;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position:center center;
+        background-size: 1500px 1000px;
+      }
 
 
 /* msg */
