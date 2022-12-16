@@ -6,6 +6,10 @@ html {
     border: 3px solid #f1f1f1;
   }
 
+  body {
+    background-image: url(/Images/carnon_arriere_plan2.jpg) ;
+  }
+
   input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 12px;
