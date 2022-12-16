@@ -3,8 +3,9 @@ body {
     }
     
     .contactez-nous {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
     width: 40%;
     padding: 1%;
     }

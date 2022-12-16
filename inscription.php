@@ -18,7 +18,7 @@ require "./ba/inscription.php";
             <div class="container">
               <h1>S'inscrire</h1>
               <p>Remplissez le formulaire afin de créer votre compte.</p>
-              <hr>
+              <hr>  
               
               <label for="nom"><b>Nom</b></label>
               <input type="text" placeholder="Nom*" name="nom" required>

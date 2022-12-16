@@ -31,7 +31,7 @@
         <div class="hotel-description">
             <div class="texte-hotel">
                 <u><h2>Notre hôtel:</h2></u>
-                <h3>L'hôtel Néptune de 1 étage, composée de 10 chambres atypiques,</h3>
+                <h3>L'hôtel Néptune de 1 étage, composée de 9 chambres atypiques,</h3>
                 <h3>un accueil et une salle à manger où vous pourrez y prendre le petit-déjeuner le matin</h3>
             </div>
             <div class="image-description">
