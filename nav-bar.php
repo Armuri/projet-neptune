@@ -19,13 +19,3 @@
 </body> 
 </html>
 
-
-<!-- <style>.box_triangle {
-        width: 0px;
-        height: 0px;
-        border-style:solid;
-        border-width:0px 10px 9px 10px; /* bas droite haut gauche */
-        border-color: transparent transparent rgb(34, 74, 255) transparent;
-        margin-left:50%;
-    }</style>
-    <div class="box_triangle"></div> -->

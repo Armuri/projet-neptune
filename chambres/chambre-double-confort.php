@@ -55,7 +55,7 @@ class="close" title="Close Modal">&times;</span>
       <input type="text" placeholder="Entrer votre nom d'utilisateur" name="login" required>
       <label for="name"><b>E-mail :</b></label>
       <input type="email" placeholder="Entrer votre e-mail" name="email" required>
-      <label for="name"><b>Ecrivez le nom de la chambre : ('Chambre Double Confort') </b>  </label>
+      <label for="name"><b>Ecrivez le nom de la chambre : Chambre Double Confort </b>  </label>
       <input type="text"name="chambres" required>
        <br><br>
       <label for="psw"><b> Début de la réservation : </b></label>
