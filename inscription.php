@@ -40,7 +40,6 @@ require "./ba/inscription.php";
               </label>
 
               <p>Vous avez déjà un compte ? <a href="connexion.php">Cliquez ici</a></p>
-
               <div class="clearfix">
                 <button type="button" class="cancelbtn">Annuler</button>
                 <button type="submit" class="signup">S'inscrire</button>

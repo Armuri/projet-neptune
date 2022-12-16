@@ -1,5 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/Images/carnon_arriere_plan2.png);
+    background-size:cover;
     }
     
     .contactez-nous {
