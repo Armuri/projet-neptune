@@ -41,9 +41,9 @@ include "./ba/formulaire.php";
 </div>
 <h1>Nos réseaux sociaux :</h1>
 <div class="icon">
-    <a href=""><img src="./Images/icons8-facebook-120.png" alt="Facebook" height="90" width="100"></a>
-    <a href=""><img src="./Images/icons8-instagram-120.png" alt="Instagram" height="90" width="100"></a>
-    <a href=""><img src="./Images/icons8-twitter-120.png" alt="Twitter" height="90" width="100"></a>
+    <a href="https://www.facebook.com/profile.php?id=100088428701466%22%3E"><img src="./Images/icons8-facebook-120.png" alt="Facebook" height="90" width="100"></a>
+    <a href="https://www.instagram.com/hotelneptune34/%22%3E"><img src="./Images/icons8-instagram-120.png" alt="Instagram" height="90" width="100"></a>
+    <a href="https://twitter.com/HOTELNEPTUNE34%22%3E"><img src="./Images/icons8-twitter-120.png" alt="Twitter" height="90" width="100"></a>
 </div>
 <link rel="stylesheet" href="./css/contact.css">
 </body>
