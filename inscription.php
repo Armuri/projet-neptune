@@ -46,8 +46,7 @@ require "./ba/inscription.php";
                 <button type="submit" class="signup">S'inscrire</button>
               </div>
             </div>
-          </form>
-        </div> 
+          </form> 
 </body>
 </html>
 

@@ -32,15 +32,15 @@ button {
 }
 
 h1{
-  color: black;
+  color: white;
 }
 label{
-  color: black;
+  color: white;
 }
 
 p {
   text-align: center;
-  color: black;
+  color: white;
   
 }
 
@@ -134,7 +134,7 @@ hr {
 }
 
 body{
-  background-image: url(/Images/carnon_arriere_plan2.png);
+  background-image: url(../Images/carnon_arriere_plan2.png);
   margin:0;
   background-attachment: fixed;
   background-repeat: no-repeat;
