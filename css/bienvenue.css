@@ -5,11 +5,7 @@ html{
 
 body{
         background-image: url(../Images/carnon_arriere_plan2.png);
-        margin:0;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position:center center;
-        background-size: 1500px 1000px;
+        background-size : cover;
       }
 
 
@@ -28,8 +24,8 @@ from {
 }
 
 .boxmain {
-    display: grid;
-    grid-template-columns: 1FR ;
+    display:flex;
+    flex-direction: column;
 }
 
 .msg_bvn {
@@ -48,18 +44,17 @@ from {
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 255);
     border-radius: 1em;
-    align-items: center;
-    padding: 1%;
+
+    padding: 2%;
 
 }
 
 /* end animation */
 
 .group-control {
-    display: flex;
-    margin-left: 35%;
+    margin-top: 1%;
+    margin-left: 45%;
 }
-
 
 .reset:focus,
 .reset:hover {
