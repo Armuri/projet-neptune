@@ -2,8 +2,7 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ;
 }
-
- form {
+ form{
     border: 3px solid #f1f1f1;
   }
 
@@ -141,4 +140,12 @@ a:focus {
       from {transform: scale(0)}
       to {transform: scale(1)}
     }
-    
+
+    body{
+      background-image: url(../Images/carnon_arriere_plan2.jpg);
+      margin:0;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position:center center;
+      background-size: 2000px 1000px;
+    }
