@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $insert = $dbh->prepare("INSERT INTO users (nom, prenom, mail, nom_utilisateur, mot_de_passe) VALUES ('$nom', '$prenom','$email','$login','$password')");
     $insert->execute(array('nom' => $nom, 'prenom' => $prenom, 'mail' => $email, 'nom_utilisateur' => $login, 'mot_de_passe' => $password ));
     header('location: ./connexion.php');
-    exit;
+    exit();
 }
 
 ?>
