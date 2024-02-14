@@ -16,7 +16,7 @@ include "./ba/formulaire.php";
     <div class="contactez-nous">
     
 <h2>Contactez-nous</h2>
-<p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+<p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
 <form action="" method="POST">
 <div>
 <label for="nom">Votre nom</label>

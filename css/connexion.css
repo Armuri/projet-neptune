@@ -7,7 +7,7 @@ html {
   }
 
   body {
-    background-image: url() ;
+    background-image: url(/Images/bord-de-mer.jpeg) ;
   }
 
   input[type=text], input[type=password] {

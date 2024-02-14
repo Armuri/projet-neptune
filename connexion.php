@@ -18,7 +18,7 @@ require "./ba/connexion.php";
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mon site de ouf </title>
+    <title>Hotel Neptune - Connexion</title>
 </head>
 <body>
     <link rel="stylesheet" href="./css/connexion.css">
